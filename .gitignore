@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+data/
+results/
+checkpoints/
+Folder/Data/*
+Folder/Model/*
+Folder/Runs/*
+!Folder/Data/README.md
+!Folder/Model/README.md
+!Folder/Runs/README.md

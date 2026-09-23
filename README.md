@@ -1,5 +1,71 @@
-# Federated Learning on Non-IID Data with Local-drift Decoupling and Correction
-Code for paper - **[Federated Learning on Non-IID Data with Local-drift Decoupling and Correction]**
+# FedRaDR
+
+Reproducible experiment code for **FedRaDR: Reliability-Aware Distillation and
+Regularization for Non-IID Federated Learning**. This repository is derived
+from the official MIT-licensed [FedDC implementation](https://github.com/gaoliang13/FedDC).
+
+The original FedDC scripts remain at the repository root for provenance. New
+FedRaDR components live in `fedradr/` and use current PyTorch APIs.
+
+## Implemented experimental requirements
+
+- reliability-aware weighted distillation with detached sample weights;
+- exact client mean, mini-batch mean, and EMA forgetting normalization;
+- deterministic seeds and reusable client-participation schedules;
+- mean forgetting gap (MFG) and high-forgetting ratio (HFR);
+- locally absent-class probability-mass retention;
+- exact serialized model payload measurement;
+- elapsed-time and peak CUDA-memory profiling hooks;
+- structured JSONL logs and unit tests.
+
+The repository intentionally does not implement or claim the manuscript's
+theoretical convergence results. It covers the experimental revision only.
+
+## Installation
+
+```bash
+python -m pip install -e ".[test]"
+pytest
+```
+
+CUDA, driver, PyTorch, torchvision, device precision, batch size, and profiler
+settings must be recorded with every reported resource result. Energy remains
+blank unless a real hardware counter is available; simulated energy numbers
+must not be reported as device measurements.
+
+## Reproducibility assets
+
+Generate one client schedule and reuse the exact JSON file for every method:
+
+```bash
+python -m scripts.make_reproducibility_assets \
+  --clients 100 --clients-per-round 10 --rounds 1000 --seed 20 \
+  --output reproducibility/schedules/c100-p10-seed20.json
+```
+
+Use seeds `20`, `21`, and `22` for every compared method. Store raw records in
+`results/<dataset>/<partition>/<method>/<seed>/metrics.jsonl`; do not commit
+datasets, checkpoints, or large raw logs.
+
+## Normalization guidance
+
+| Mode | Use case | Trade-off |
+|---|---|---|
+| `exact` | Moderate local datasets and accuracy-first evaluation | Full-client student pre-pass per local stage; highest cost |
+| `minibatch` | Memory- or time-constrained clients | No full-client reference; noisier normalization |
+| `ema` | Throughput-oriented or edge evaluation | Lowest reference cost; depends on registered EMA decay |
+
+For persistent teacher caching, the dataset must expose stable sample indices.
+Caching by shuffled batch position is incorrect and is deliberately not used.
+
+## Required reporting
+
+Each experiment must publish the partition file/hash, client schedule, complete
+configuration, code commit, per-seed logs, hardware description, and raw rounds
+to target. If a baseline does not reach the target within the budget, speedup is
+reported as a lower bound (for example, `>5.26x`).
+
+## FedDC upstream documentation
 
 We provide code to run FedDC, FedAvg, 
 [FedDyn](https://openreview.net/pdf?id=B7v4QMR6Z9w), 
