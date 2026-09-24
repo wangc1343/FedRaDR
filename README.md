@@ -28,6 +28,35 @@ python -m pip install -e ".[test]"
 pytest
 ```
 
+For the current dependency set without installing the package first:
+
+```bash
+python -m pip install -r requirements-fedradr.txt
+python scripts/smoke_fedradr.py --output smoke_output
+```
+
+The smoke command executes the complete FedDC state update, FedRaDR local
+objective, server aggregation, evaluation, JSONL logging, and checkpoint save.
+
+## Full experiment entry point
+
+`scripts/run_fedradr.py` consumes a compressed NPZ containing `clnt_x`,
+`clnt_y`, `tst_x`, `tst_y`, and `dataset`. It supports the paper's
+ResNet-18-GN and MobileNetV2-GN configurations:
+
+```bash
+python scripts/run_fedradr.py \
+  --data partitions/cifar10-d1.npz \
+  --output results/CIFAR10/D1/FedRaDR/20 \
+  --model resnet18 --rounds 1000 --clients-per-round 10 \
+  --seed 20 --normalization exact
+```
+
+The runner saves the fixed client schedule, complete configuration, per-round
+metrics, and the latest global model. Full FedDC drift and gradient state is
+large for ResNet-18 and is therefore opt-in via `--checkpoint-every N`; these
+histories remain in CPU memory during training rather than consuming GPU memory.
+
 CUDA, driver, PyTorch, torchvision, device precision, batch size, and profiler
 settings must be recorded with every reported resource result. Energy remains
 blank unless a real hardware counter is available; simulated energy numbers

@@ -79,18 +79,42 @@ class FedRaDRLocalTrainer:
         teacher: nn.Module,
         loader: Iterable[tuple[torch.Tensor, torch.Tensor]],
         device: torch.device,
+        teacher_cache: torch.Tensor | None = None,
     ) -> torch.Tensor:
         was_training = model.training
         model.eval()
         total = torch.zeros((), device=device)
         count = 0
-        for inputs, targets in loader:
+        for batch in loader:
+            inputs, targets = batch[:2]
             inputs, targets = inputs.to(device), targets.to(device).reshape(-1).long()
-            gaps = positive_forgetting_gap(model(inputs), teacher(inputs), targets)
+            indices = batch[2].to(device).long() if len(batch) > 2 else None
+            teacher_logits = teacher_cache[indices] if teacher_cache is not None else teacher(inputs)
+            gaps = positive_forgetting_gap(model(inputs), teacher_logits, targets)
             total += gaps.sum()
             count += targets.numel()
         model.train(was_training)
         return total / max(count, 1)
+
+    @staticmethod
+    @torch.no_grad()
+    def _cache_teacher(
+        teacher: nn.Module,
+        loader: Iterable[tuple[torch.Tensor, ...]],
+        device: torch.device,
+    ) -> torch.Tensor | None:
+        cache = None
+        for batch in loader:
+            if len(batch) < 3:
+                return None
+            inputs, indices = batch[0].to(device), batch[2].to(device).long()
+            logits = teacher(inputs)
+            if cache is None:
+                cache = torch.empty(
+                    (len(loader.dataset), logits.shape[1]), dtype=logits.dtype, device=device
+                )
+            cache[indices] = logits
+        return cache
 
     def train(
         self,
@@ -106,6 +130,7 @@ class FedRaDRLocalTrainer:
         proximal_center: torch.Tensor | None = None,
         gradient_correction: torch.Tensor | None = None,
         max_grad_norm: float | None = None,
+        reference_loader: Iterable[tuple[torch.Tensor, ...]] | None = None,
     ) -> tuple[nn.Module, list[dict[str, float]]]:
         device = next(model.parameters()).device
         teacher = copy.deepcopy(global_model).to(device).eval()
@@ -119,20 +144,28 @@ class FedRaDRLocalTrainer:
 
         metrics: list[dict[str, float]] = []
         schedule = stage_schedule(round_index, total_rounds)
+        self._ema_reference = None
+        teacher_cache = self._cache_teacher(teacher, reference_loader or loader, device)
 
         for local_epoch in range(local_epochs):
             if self.config.normalization == "exact":
-                reference = self._exact_reference(model, teacher, loader, device)
+                reference = self._exact_reference(
+                    model, teacher, reference_loader or loader, device, teacher_cache
+                )
             else:
                 reference = None
 
             model.train()
-            for batch_index, (inputs, targets) in enumerate(loader):
+            for batch_index, batch in enumerate(loader):
+                inputs, targets = batch[:2]
                 inputs, targets = inputs.to(device), targets.to(device).reshape(-1).long()
+                indices = batch[2].to(device).long() if len(batch) > 2 else None
                 with torch.no_grad():
-                    # Batch-position caching is invalid when the training loader shuffles.
-                    # Use an indexed dataset for persistent per-sample caches in full runs.
-                    teacher_logits = teacher(inputs).detach()
+                    teacher_logits = (
+                        teacher_cache[indices]
+                        if teacher_cache is not None and indices is not None
+                        else teacher(inputs)
+                    ).detach()
 
                 student_logits = model(inputs)
                 gaps = positive_forgetting_gap(student_logits, teacher_logits, targets)
@@ -171,6 +204,7 @@ class FedRaDRLocalTrainer:
                     {
                         "local_epoch": float(local_epoch),
                         "batch": float(batch_index),
+                        "batch_size": float(targets.numel()),
                         "loss": float(loss.detach()),
                         "supervised_loss": float(supervised.detach()),
                         "distillation_loss": float(distillation.detach()),

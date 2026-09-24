@@ -5,6 +5,9 @@ __pycache__/
 data/
 results/
 checkpoints/
+smoke_output*/
+tiny_cifar_run*/
+tiny_cifar_partition.npz
 Folder/Data/*
 Folder/Model/*
 Folder/Runs/*
