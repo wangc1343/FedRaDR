@@ -16,7 +16,7 @@ if __package__ in {None, ""}:
 
 from fedradr.models import make_model
 from fedradr.objective import FedRaDRConfig
-from fedradr.reproducibility import make_client_schedule
+from fedradr.reproducibility import make_client_schedule, seed_everything
 from utils_methods_FedRaDR import train_FedRaDR
 
 
@@ -52,6 +52,7 @@ def main() -> None:
     parser.add_argument("--lambda-max", type=float, default=0.5)
     parser.add_argument("--temperature", type=float, default=4.0)
     parser.add_argument("--normalization", choices=["exact", "minibatch", "ema"], default="exact")
+    parser.add_argument("--hfr-threshold", type=float, default=None)
     parser.add_argument("--device", default=None)
     parser.add_argument("--checkpoint-every", type=int, default=0)
     args = parser.parse_args()
@@ -59,7 +60,9 @@ def main() -> None:
     data_obj = load_data(args.data)
     num_classes = 100 if data_obj.dataset == "CIFAR100" else 10
     model_func = lambda: make_model(args.model, num_classes)
-    torch.manual_seed(37)
+    # Use the experiment seed for model initialization as well as training and
+    # client scheduling, so seed 20/21/22 defines a complete independent run.
+    seed_everything(args.seed)
     initial_model = model_func()
     schedule = make_client_schedule(
         data_obj.n_client, args.clients_per_round, args.rounds, args.seed
@@ -78,6 +81,7 @@ def main() -> None:
             lambda_max=args.lambda_max,
             temperature=args.temperature,
             normalization=args.normalization,
+            hfr_threshold=args.hfr_threshold,
         ),
         learning_rate=args.learning_rate,
         learning_rate_decay=args.learning_rate_decay,

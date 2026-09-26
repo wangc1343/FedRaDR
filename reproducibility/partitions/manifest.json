@@ -1,0 +1,33 @@
+{
+  "serialization": "pickle",
+  "extension": ".pkl",
+  "seeds": [20, 21, 22],
+  "expected_file_count": 51,
+  "files_present_in_local_repository": false,
+  "reuse_rule": "For a fixed dataset, client count, partition and seed, reuse the identical file across every compared method. Seed-specific files are distinct partition realizations.",
+  "groups": [
+    {"dataset": "cifar10", "num_clients": [100, 500], "partitions": {"D1": {"alpha": 0.3}, "D2": {"alpha": 0.6}, "P1": {"n_class_per_client": 3}, "P2": {"n_class_per_client": 5}}},
+    {"dataset": "cifar100", "num_clients": [100, 500], "partitions": {"D1": {"alpha": 0.3}, "D2": {"alpha": 0.6}, "P1": {"n_class_per_client": 10}, "P2": {"n_class_per_client": 20}}},
+    {"dataset": "tinyimagenet", "num_clients": [100], "partitions": {"D1": {"alpha": 0.1}}}
+  ],
+  "filename_template": "{dataset}_N{num_clients}_{partition}_seed{seed}.pkl",
+  "pickle_schema": {
+    "client_indices": "list[list[int]]",
+    "n_client": "int",
+    "dataset": "str",
+    "partition_type": "str",
+    "hyper": "dict containing alpha or n_class_per_client",
+    "seed": "int",
+    "index_basis": "required release metadata: raw dataset order or the exact seeded permutation applied before indexing"
+  },
+  "displayed_record_hash_prefixes_from_manuscript": {
+    "cifar10_D1": "a19cfe9ffd3f",
+    "cifar10_D2": "6234713dd488",
+    "cifar10_P1": "7406585d0814",
+    "cifar10_P2": "e6c84e4ebae2",
+    "cifar100_D1": "99754bc40ccf",
+    "tinyimagenet_D1": "dbbf1ccc215a"
+  },
+  "hash_warning": "The supplied filename record did not map the manuscript hash prefixes to individual seed files. Recover the files and publish full SHA-256 hashes before submission.",
+  "index_warning": "Confirm whether client_indices address the original dataset order or FedDC's seed-shuffled order before implementing PKL-to-training-data materialization."
+}

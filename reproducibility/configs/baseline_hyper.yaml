@@ -1,0 +1,60 @@
+FedDyn:
+  alpha: 0.1
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedVRA:
+  control_weight: 0.5
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedDisco:
+  lambda_disco: 0.22
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedSpeed:
+  rho: 0.05
+  sam_alpha: 0.1
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedKT:
+  kd_temperature: 4.0
+  kd_lambda: 0.75
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedSKC:
+  struct_coeff: 0.65
+  kd_temp: 4.0
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedRaDR:
+  alpha: 0.1
+  lambda_max: 0.5
+  T: 4.0
+  epsilon: 1.0e-8
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+FedRaDR-SAM:
+  alpha: 0.1
+  lambda_max: 0.5
+  T: 4.0
+  epsilon: 1.0e-8
+  rho: 0.05
+  sam_alpha: 0.1
+  local_epoch: 5
+  lr: 0.1
+  lr_decay: 0.998
+  weight_decay: 1.0e-3
+

@@ -1,0 +1,5 @@
+method,seed20_mfg,seed21_mfg,seed22_mfg,mfg_mean,mfg_sample_std,seed20_hfr,seed21_hfr,seed22_hfr,hfr_mean,hfr_sample_std
+FedAvg,0.642,0.657,0.635,0.645,0.011,0.347,0.358,0.341,0.349,0.009
+FedDyn,0.443,0.456,0.438,0.446,0.009,0.217,0.228,0.213,0.219,0.008
+FedRaDR,0.171,0.182,0.168,0.174,0.007,0.073,0.081,0.071,0.075,0.005
+

@@ -1,0 +1,24 @@
+{
+  "selection_dataset": "CIFAR10",
+  "selection_partition": "D1 (Dirichlet alpha=0.3)",
+  "selection_setting": "C100-P10",
+  "selection_rule": "Select once on the designated development setting, then freeze for all reported test settings.",
+  "fedradr": {
+    "lambda_max_candidates": [0.1, 0.3, 0.5, 0.7, 1.0],
+    "lambda_max_selected": 0.5,
+    "temperature_candidates": [1, 2, 3, 4, 5],
+    "temperature_selected": 4,
+    "epsilon": 1e-8,
+    "epsilon_tuned": false
+  },
+  "reported_selection_accuracy_percent": {
+    "lambda_max": {"0.1": 82.0, "0.3": 83.0, "0.5": 84.5, "0.7": 84.3, "1.0": 81.5},
+    "temperature": {"1": 81.5, "2": 83.0, "3": 84.0, "4": 84.5, "5": 84.3}
+  },
+  "baselines": {
+    "rule": "Use each original paper's recommended search space under the same development setting and budget, then freeze the selected coefficient.",
+    "exact_search_spaces_and_selected_values": null,
+    "status": "author_record_required_before_release"
+  }
+}
+

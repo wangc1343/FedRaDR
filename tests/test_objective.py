@@ -39,7 +39,7 @@ def test_local_trainer_runs_all_normalization_modes():
         local_model = nn.Linear(4, 3)
         local_model.load_state_dict(global_model.state_dict())
         optimizer = torch.optim.SGD(local_model.parameters(), lr=0.05)
-        trainer = FedRaDRLocalTrainer(FedRaDRConfig(normalization=mode))
+        trainer = FedRaDRLocalTrainer(FedRaDRConfig(normalization=mode, hfr_threshold=0.1))
         _, metrics = trainer.train(
             local_model,
             global_model,
@@ -51,4 +51,5 @@ def test_local_trainer_runs_all_normalization_modes():
         )
         assert len(metrics) == 3
         assert all(0 <= row["mean_gate"] <= 1 for row in metrics)
+        assert all(0 <= row["hfr_tau"] <= 1 for row in metrics)
         assert serialized_state_dict_bytes(local_model) > 0

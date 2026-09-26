@@ -1,0 +1,40 @@
+{
+  "audit_date": "2026-09-25",
+  "code": {
+    "status": "available",
+    "local_commit_at_audit": "7fd5ed8",
+    "upstream": "https://github.com/gaoliang13/FedDC",
+    "public_fedradr_url": null,
+    "note": "Create an author-owned repository and replace the null URL before submission."
+  },
+  "client_schedules": {
+    "status": "available_for_deterministic_reruns",
+    "path": "reproducibility/schedules",
+    "note": "Verify that these deterministic files match any schedules retained from the historical primary campaign."
+  },
+  "partition_files": {
+    "status": "inventory_and_schema_available_binary_files_missing",
+    "path": "reproducibility/partitions/manifest.json"
+  },
+  "baseline_hyperparameters": {
+    "status": "author_provided_final_values_available",
+    "path": "reproducibility/configs/baseline_hyperparameters.json"
+  },
+  "tuning_protocol": {
+    "status": "fedradr_available_baseline_details_pending",
+    "path": "reproducibility/configs/tuning_protocol.json"
+  },
+  "reported_appendix_c_records": {
+    "status": "available_as_reported_aggregates",
+    "path": "reproducibility/reported_results"
+  },
+  "full_per_round_logs": {
+    "status": "missing_from_local_repository",
+    "schema": "reproducibility/raw_logs/README.md",
+    "note": "Only a smoke-test metrics.jsonl was found; the naming convention and required columns are documented."
+  },
+  "energy_measurement": {
+    "status": "measurement_tool_available_raw_paper_traces_missing",
+    "path": "reproducibility/energy/README.md"
+  }
+}

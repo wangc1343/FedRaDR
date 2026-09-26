@@ -1,0 +1,31 @@
+{
+  "seeds": [20, 21, 22],
+  "initial_model_seed": 37,
+  "optimizer": "SGD",
+  "learning_rate": 0.1,
+  "learning_rate_decay_per_round": 0.998,
+  "weight_decay": 0.001,
+  "batch_size": 50,
+  "local_epochs_or_steps_as_reported": 5,
+  "primary_round_budget": 1000,
+  "tiny_imagenet_round_budget": 500,
+  "primary_model": "ResNet-18-GN",
+  "transfer_model": "MobileNetV2-GN",
+  "primary_settings": {
+    "C100-P10": {"num_clients": 100, "clients_per_round": 10},
+    "C500-P2": {"num_clients": 500, "clients_per_round": 10}
+  },
+  "controlled_participation_settings": {
+    "C100-P10": {"num_clients": 100, "clients_per_round": 10},
+    "C100-P5": {"num_clients": 100, "clients_per_round": 5},
+    "C100-P2": {"num_clients": 100, "clients_per_round": 2}
+  },
+  "cifar10_target_accuracy_percent": 80,
+  "c500_p2_target_accuracy_percent": 75,
+  "aggregation": "data-size weighted",
+  "notes": [
+    "Use the same serialized partition and client schedule for every method within a matched setting and seed.",
+    "Report censored target rounds as >budget and derived speedups as strict lower bounds."
+  ]
+}
+

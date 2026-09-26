@@ -77,7 +77,7 @@ def main() -> None:
         initial_model,
         client_schedule=schedule,
         output_dir=args.output,
-        config=FedRaDRConfig(normalization="exact"),
+        config=FedRaDRConfig(normalization="exact", hfr_threshold=0.1),
         learning_rate=0.05,
         batch_size=8,
         local_epochs=1,

@@ -9,8 +9,9 @@ the paper.
 
 - Datasets: CIFAR-10, CIFAR-100, and Tiny-ImageNet where the paper reports it.
 - Models: ResNet-18 with GN; MobileNetV2 only for the stated transfer checks.
-- Partitions: the same serialized Dirichlet/pathological partitions are reused
-  by every method and every seed.
+- Partitions: seeds 20, 21, and 22 use their respective serialized
+  Dirichlet/pathological partition realizations. Within a fixed seed and
+  setting, every compared method reuses the identical partition file.
 - Seeds: 20, 21, and 22 for every primary method/setting pair.
 - Participation: C100-P10 and C500-P2 for the CIFAR comparisons.
 - Metrics: final accuracy, target round, single-device aggregate compute time,

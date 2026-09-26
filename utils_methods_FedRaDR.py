@@ -91,6 +91,11 @@ def _sample_weighted_mean(rows: list[dict[str, float]], key: str) -> float:
     return sum(row[key] * row["batch_size"] for row in rows) / count
 
 
+def _sample_weighted_mean_optional(rows: list[dict[str, float]], key: str) -> float | None:
+    matching = [row for row in rows if key in row]
+    return _sample_weighted_mean(matching, key) if matching else None
+
+
 class _MaterializedIndexedDataset(Dataset):
     """Freeze one round's augmentation and expose stable cache indices."""
 
@@ -164,6 +169,7 @@ def train_FedRaDR(
     parameter_drifts = torch.zeros((n_clients, n_params), device="cpu")
     gradient_states = torch.zeros((n_clients + 1, n_params), device="cpu")
     mean_parameter_drift = torch.zeros(n_params, device=run_device)
+    cumulative_serialized_bytes = 0
 
     run_config = {
         "seed": seed,
@@ -238,7 +244,14 @@ def train_FedRaDR(
                 selected_parameters.append(current_params)
                 round_metrics.extend(metrics)
 
-            selected_average = torch.stack(selected_parameters).mean(dim=0)
+            selected_stack = torch.stack(selected_parameters)
+            selected_weights = torch.tensor(
+                [client_sizes[client_id] for client_id in selected_clients],
+                dtype=selected_stack.dtype,
+                device=run_device,
+            )
+            selected_weights = selected_weights / selected_weights.sum()
+            selected_average = (selected_stack * selected_weights[:, None]).sum(dim=0)
             gradient_states[-1] += (delta_gradient_sum / n_clients).detach().cpu()
             cloud_params = selected_average + mean_parameter_drift
             _load_flat_parameters(global_model, cloud_params)
@@ -247,6 +260,10 @@ def train_FedRaDR(
             data_obj.tst_x, data_obj.tst_y, global_model, data_obj.dataset
         )
         measurement = resource_result["measurement"]
+        payload_per_client = serialized_state_dict_bytes(global_model)
+        downlink_bytes = payload_per_client * len(selected_clients)
+        uplink_bytes = payload_per_client * len(selected_clients)
+        cumulative_serialized_bytes += downlink_bytes + uplink_bytes
         logger.log(
             {
                 "round": round_index,
@@ -254,13 +271,18 @@ def train_FedRaDR(
                 "learning_rate": current_lr,
                 "test_loss": float(test_loss),
                 "test_accuracy": float(test_accuracy),
+                "train_objective": _sample_weighted_mean(round_metrics, "loss"),
                 "mfg": _sample_weighted_mean(round_metrics, "mfg"),
-                "hfr": _sample_weighted_mean(round_metrics, "hfr"),
-                "elapsed_seconds": measurement.elapsed_seconds,
+                "hfr_tau": _sample_weighted_mean_optional(round_metrics, "hfr_tau"),
+                "hfr_reference": _sample_weighted_mean(round_metrics, "hfr_reference"),
+                "single_device_elapsed_seconds": measurement.elapsed_seconds,
                 "peak_cuda_bytes": measurement.peak_cuda_bytes,
                 "energy_joules": measurement.energy_joules,
-                "downlink_bytes_per_client": serialized_state_dict_bytes(global_model),
-                "uplink_bytes_per_client": serialized_state_dict_bytes(global_model),
+                "downlink_bytes_per_client": payload_per_client,
+                "uplink_bytes_per_client": payload_per_client,
+                "downlink_bytes": downlink_bytes,
+                "uplink_bytes": uplink_bytes,
+                "cumulative_serialized_bytes": cumulative_serialized_bytes,
             }
         )
         torch.save(

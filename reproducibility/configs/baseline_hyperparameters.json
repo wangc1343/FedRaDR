@@ -1,0 +1,55 @@
+{
+  "source": "author-provided reproduction record, 2026-09-25",
+  "scope": "CIFAR and Tiny-ImageNet experiments",
+  "shared": {
+    "optimizer": "SGD unless marked optimizer-enhanced",
+    "learning_rate": 0.1,
+    "learning_rate_decay_per_round": 0.998,
+    "weight_decay": 0.001,
+    "batch_size": 50,
+    "local_epochs": 5
+  },
+  "methods": {
+    "FedAvg": {"method_specific_parameters": {}, "status": "complete"},
+    "SCAFFOLD": {"method_specific_parameters": {}, "status": "complete"},
+    "FedDyn": {"method_specific_parameters": {"alpha": 0.1}, "status": "complete"},
+    "FedVRA": {"method_specific_parameters": {"control_weight": 0.5}, "status": "complete"},
+    "FedDisco": {"method_specific_parameters": {"lambda_disco": 0.22}, "status": "complete"},
+    "FedSpeed": {
+      "optimizer": "SAM",
+      "method_specific_parameters": {"rho": 0.05, "sam_alpha": 0.1},
+      "status": "complete"
+    },
+    "FedKT": {
+      "method_specific_parameters": {"kd_temperature": 4.0, "kd_lambda": 0.75},
+      "status": "complete"
+    },
+    "FedSKC": {
+      "method_specific_parameters": {"struct_coeff": 0.65, "kd_temperature": 4.0},
+      "status": "complete"
+    },
+    "FedRaDR": {
+      "method_specific_parameters": {
+        "dynamic_regularization_alpha": 0.1,
+        "lambda_max": 0.5,
+        "temperature": 4.0,
+        "epsilon": 1e-8,
+        "normalization": "exact client mean"
+      },
+      "status": "complete"
+    },
+    "FedRaDR-SAM": {
+      "optimizer": "SAM",
+      "method_specific_parameters": {
+        "dynamic_regularization_alpha": 0.1,
+        "lambda_max": 0.5,
+        "temperature": 4.0,
+        "epsilon": 1e-8,
+        "rho": 0.05,
+        "sam_alpha": 0.1
+      },
+      "status": "complete"
+    }
+  }
+}
+

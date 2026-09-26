@@ -19,6 +19,7 @@ class FedRaDRConfig:
     epsilon: float = 1e-8
     normalization: Normalization = "exact"
     ema_decay: float = 0.9
+    hfr_threshold: float | None = None
 
     def __post_init__(self) -> None:
         if self.lambda_max < 0:
@@ -29,6 +30,8 @@ class FedRaDRConfig:
             raise ValueError(f"unsupported normalization: {self.normalization}")
         if not 0 <= self.ema_decay < 1:
             raise ValueError("ema_decay must be in [0, 1)")
+        if self.hfr_threshold is not None and self.hfr_threshold < 0:
+            raise ValueError("hfr_threshold must be non-negative")
 
 
 def stage_schedule(round_index: int, total_rounds: int) -> float:
@@ -200,8 +203,7 @@ class FedRaDRLocalTrainer:
                     nn.utils.clip_grad_norm_(model.parameters(), max_grad_norm)
                 optimizer.step()
 
-                metrics.append(
-                    {
+                metric = {
                         "local_epoch": float(local_epoch),
                         "batch": float(batch_index),
                         "batch_size": float(targets.numel()),
@@ -209,9 +211,13 @@ class FedRaDRLocalTrainer:
                         "supervised_loss": float(supervised.detach()),
                         "distillation_loss": float(distillation.detach()),
                         "mfg": float(gaps.detach().mean()),
-                        "hfr": float((gaps.detach() > reference.detach()).float().mean()),
+                        "hfr_reference": float((gaps.detach() > reference.detach()).float().mean()),
                         "mean_confidence": float(confidence.mean()),
                         "mean_gate": float(gate.detach().mean()),
                     }
-                )
+                if self.config.hfr_threshold is not None:
+                    metric["hfr_tau"] = float(
+                        (gaps.detach() > self.config.hfr_threshold).float().mean()
+                    )
+                metrics.append(metric)
         return model, metrics

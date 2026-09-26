@@ -1,0 +1,12 @@
+{
+  "captured_at_utc": "2026-09-25T07:26:30.735835+00:00",
+  "cuda_runtime": null,
+  "cudnn": null,
+  "driver_version": null,
+  "git_commit": "7fd5ed852f052f63368da580d62e1886beb317f1",
+  "gpu_name": null,
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "pytorch": "2.14.0+cpu",
+  "torchvision": "0.29.0+cpu"
+}

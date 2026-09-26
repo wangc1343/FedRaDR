@@ -1,0 +1,15 @@
+from pathlib import Path
+
+
+PARTITION_ROOT = Path("partitions")
+LOG_ROOT = Path("run_logs")
+POWER_TRACE_ROOT = Path("power_traces")
+
+MAIN_SEEDS = (20, 21, 22)
+MAX_COMM_ROUNDS = 1000
+BATCH_SIZE = 50
+LOCAL_EPOCHS = 5
+LOCAL_LEARNING_RATE = 0.1
+LEARNING_RATE_DECAY = 0.998
+WEIGHT_DECAY = 1e-3
+

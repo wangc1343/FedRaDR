@@ -1,0 +1,16 @@
+{
+  "captured_at_utc": null,
+  "git_commit": null,
+  "operating_system": null,
+  "python": null,
+  "pytorch": null,
+  "torchvision": null,
+  "cuda_runtime": null,
+  "cudnn": null,
+  "gpu_name": null,
+  "driver_version": null,
+  "precision": "FP32",
+  "batch_size": 50,
+  "notes": null
+}
+
