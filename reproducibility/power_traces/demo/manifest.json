@@ -1,0 +1,77 @@
+{
+  "schema_version": "fedradr.generated-energy.v1",
+  "records": [
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedAvg_seed20.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedAvg_seed20.samples.summary.json",
+      "sha256": "a98e9b396caa2597a19e6deb68d2ce304a7fbec1492f09aa1a3b66962a2e6943",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedAvg_seed21.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedAvg_seed21.samples.summary.json",
+      "sha256": "077739515cb6c86aa3f5738af07a3feafc6a2f9edf28e1e64824b062e61bbf2e",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedAvg_seed22.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedAvg_seed22.samples.summary.json",
+      "sha256": "51f91041b7a6744b538f89f3891cc785215e2d099b137db0ebf5fc5e889282c0",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-exact_seed20.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-exact_seed20.samples.summary.json",
+      "sha256": "6cb7945c5c564a7865f24ca4b26864575bceacf6b23e2c747d36c7c129f6cfed",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-exact_seed21.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-exact_seed21.samples.summary.json",
+      "sha256": "5784a4e90ceb27af040df0cb08f00ad7932cf584e18c6f5b7d7745c1bb12466a",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-exact_seed22.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-exact_seed22.samples.summary.json",
+      "sha256": "494f1f6b5498a899e2de98b9bc71783b404b6d9f79fd44d3d99b08f4fba39014",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed20.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed20.samples.summary.json",
+      "sha256": "cec073a62d4c567ae00546a53ff4fd7dfb34e832614e5959eff2e1b5e0394161",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed21.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed21.samples.summary.json",
+      "sha256": "573d2ff682d0429fd4badb4dcd810841f982d6b74d8c56bbbcf0aef23a9a46e2",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed22.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed22.samples.summary.json",
+      "sha256": "c0b55a6a56cbf7b50a78cf8a289a962bf5237eebb4584b836e423a959ab45758",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-EMA_seed20.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-EMA_seed20.samples.summary.json",
+      "sha256": "97ce54e2f8acc67e58ee6ab18bbbea0029f5f3a7780d9ef61e96792df985a648",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-EMA_seed21.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-EMA_seed21.samples.summary.json",
+      "sha256": "86aa12601532efe2480c6d15804d47e27b1adc783a0b8ff3aa353f857dedbaea",
+      "historical": false
+    },
+    {
+      "trace": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-EMA_seed22.samples.csv",
+      "summary": "reproducibility/power_traces/demo/power_jetson_orin_tinyimagenet_FedRaDR-EMA_seed22.samples.summary.json",
+      "sha256": "1bbb1cf9f415053363790ab164424ddfbe5ff3cd6d044dca70afdb14e14416d5",
+      "historical": false
+    }
+  ]
+}

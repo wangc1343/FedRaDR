@@ -1,0 +1,64 @@
+{
+  "schema_version": "fedradr.log-summary.v1",
+  "target_accuracy": 0.8,
+  "budget_rounds": 1000,
+  "entries": [
+    {
+      "source": "results/smoke_current/metrics.jsonl",
+      "source_sha256": "c4e84ff85dc3f260fb0becec187e3ee9bce861212fa15844a0b6806837aee152",
+      "valid": false,
+      "errors": [
+        "line 1: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds",
+        "line 2: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds",
+        "line 3: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds"
+      ]
+    },
+    {
+      "source": "results/smoke_hfr_check/metrics.jsonl",
+      "source_sha256": "0ddf32b4798b0f6051a642f2acf4af2357f265e3fff4de7e566eef129fe5bd17",
+      "valid": true,
+      "target_accuracy": 0.8,
+      "budget_rounds": 1000,
+      "first_hit_round": ">1000",
+      "censored": true,
+      "accuracy_at_budget": 0.6354166865348816,
+      "final_accuracy": 0.6354166865348816,
+      "rounds": 3,
+      "config": "results/smoke_hfr_check/config.json"
+    },
+    {
+      "source": "results/smoke_repro_check/metrics.jsonl",
+      "source_sha256": "7c572d5ebf36d4f5508f7d3c50eb25be6edcf9d1205f1f8bd1efb75204653ddc",
+      "valid": false,
+      "errors": [
+        "line 1: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds",
+        "line 2: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds",
+        "line 3: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds"
+      ]
+    },
+    {
+      "source": "results/smoke_schema_check/metrics.jsonl",
+      "source_sha256": "64a6fc619c6209f9defbe4a92c4ff0c79dc8e67cc00506d4ab233439234d314c",
+      "valid": true,
+      "target_accuracy": 0.8,
+      "budget_rounds": 1000,
+      "first_hit_round": ">1000",
+      "censored": true,
+      "accuracy_at_budget": 0.6354166865348816,
+      "final_accuracy": 0.6354166865348816,
+      "rounds": 3,
+      "config": "results/smoke_schema_check/config.json"
+    },
+    {
+      "source": "results/smoke_user/metrics.jsonl",
+      "source_sha256": "c4e84ff85dc3f260fb0becec187e3ee9bce861212fa15844a0b6806837aee152",
+      "valid": false,
+      "errors": [
+        "line 1: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds",
+        "line 2: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds",
+        "line 3: missing train_objective, hfr_tau, downlink_bytes, uplink_bytes, cumulative_serialized_bytes, single_device_elapsed_seconds"
+      ]
+    }
+  ],
+  "policy": "Censored targets remain >budget; no speedup is inferred from missing references."
+}

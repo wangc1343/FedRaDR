@@ -1,0 +1,16 @@
+{
+  "config_json": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/results/smoke_schema_check/config.json",
+  "derived_fields": [
+    "round",
+    "test_accuracy",
+    "train_objective",
+    "mfg",
+    "hfr_tau",
+    "downlink_bytes",
+    "uplink_bytes",
+    "cumulative_serialized_bytes",
+    "single_device_elapsed_seconds"
+  ],
+  "source_jsonl": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/results/smoke_schema_check/metrics.jsonl",
+  "source_sha256": "64a6fc619c6209f9defbe4a92c4ff0c79dc8e67cc00506d4ab233439234d314c"
+}

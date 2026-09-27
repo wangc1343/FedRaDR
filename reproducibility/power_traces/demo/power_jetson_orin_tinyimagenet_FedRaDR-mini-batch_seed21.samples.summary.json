@@ -1,0 +1,14 @@
+{
+  "provenance": {
+    "origin": "demo",
+    "historical": false
+  },
+  "device": "Jetson AGX Orin (generated)",
+  "method": "FedRaDR-mini-batch",
+  "seed": 21,
+  "sampling_interval_ms": 100,
+  "power_scope": "board_total",
+  "elapsed_seconds": 60.0,
+  "energy_joules": 2190.0,
+  "raw_trace": "power_jetson_orin_tinyimagenet_FedRaDR-mini-batch_seed21.samples.csv"
+}

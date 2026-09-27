@@ -1,0 +1,173 @@
+{
+  "author_recorded_selections": {
+    "FedRaDR": {
+      "alpha": 0.1,
+      "lambda_max": 0.5,
+      "temperature": 4.0
+    },
+    "FedRaDR-SAM": {
+      "alpha": 0.1,
+      "lambda_max": 0.5,
+      "rho": 0.05,
+      "sam_alpha": 0.1,
+      "temperature": 4.0
+    }
+  },
+  "historical": false,
+  "methods": {
+    "FedAvg": {
+      "method_specific": {}
+    },
+    "FedDisco": {
+      "method_specific": {
+        "lambda_disco": [
+          0.1,
+          0.22,
+          0.5
+        ]
+      }
+    },
+    "FedDyn": {
+      "method_specific": {
+        "alpha": [
+          0.01,
+          0.1,
+          1.0
+        ]
+      }
+    },
+    "FedKT": {
+      "method_specific": {
+        "kd_lambda": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "kd_temperature": [
+          2.0,
+          4.0,
+          8.0
+        ]
+      }
+    },
+    "FedRaDR": {
+      "method_specific": {
+        "alpha": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "lambda_max": [
+          0.1,
+          0.3,
+          0.5,
+          0.7,
+          1.0
+        ],
+        "temperature": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "FedRaDR-SAM": {
+      "method_specific": {
+        "alpha": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "lambda_max": [
+          0.1,
+          0.3,
+          0.5,
+          0.7,
+          1.0
+        ],
+        "rho": [
+          0.01,
+          0.05,
+          0.1
+        ],
+        "sam_alpha": [
+          0.05,
+          0.1,
+          0.2
+        ],
+        "temperature": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "optimizer": "SAM"
+    },
+    "FedSKC": {
+      "method_specific": {
+        "kd_temperature": [
+          2.0,
+          4.0,
+          8.0
+        ],
+        "struct_coeff": [
+          0.25,
+          0.65,
+          1.0
+        ]
+      }
+    },
+    "FedSpeed": {
+      "method_specific": {
+        "rho": [
+          0.01,
+          0.05,
+          0.1
+        ],
+        "sam_alpha": [
+          0.05,
+          0.1,
+          0.2
+        ]
+      },
+      "optimizer": "SAM"
+    },
+    "FedVRA": {
+      "method_specific": {
+        "control_weight": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      }
+    },
+    "SCAFFOLD": {
+      "method_specific": {}
+    }
+  },
+  "schema_version": "fedradr.rerun-tuning.v1",
+  "selection_rule": "Select on this setting and freeze the selected values for every test setting and seed.",
+  "selection_setting": "CIFAR10-D1-C100-P10",
+  "shared": {
+    "learning_rate": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "local_epochs": [
+      3,
+      5,
+      10
+    ],
+    "weight_decay": [
+      0.0001,
+      0.001,
+      0.01
+    ]
+  },
+  "status": "rerun_protocol"
+}

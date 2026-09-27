@@ -1,0 +1,16 @@
+{
+  "config_json": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/results/demo/cifar10_C100-P10_FedDyn_seed21/config.json",
+  "derived_fields": [
+    "round",
+    "test_accuracy",
+    "train_objective",
+    "mfg",
+    "hfr_tau",
+    "downlink_bytes",
+    "uplink_bytes",
+    "cumulative_serialized_bytes",
+    "single_device_elapsed_seconds"
+  ],
+  "source_jsonl": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/results/demo/cifar10_C100-P10_FedDyn_seed21/metrics.jsonl",
+  "source_sha256": "f9a1db9c342bdb97e178905dda01ace2b1fafcb06d6d59ca3cd75a63a235eb5b"
+}

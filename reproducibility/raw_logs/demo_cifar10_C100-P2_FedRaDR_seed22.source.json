@@ -1,0 +1,16 @@
+{
+  "config_json": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/results/demo/cifar10_C100-P2_FedRaDR_seed22/config.json",
+  "derived_fields": [
+    "round",
+    "test_accuracy",
+    "train_objective",
+    "mfg",
+    "hfr_tau",
+    "downlink_bytes",
+    "uplink_bytes",
+    "cumulative_serialized_bytes",
+    "single_device_elapsed_seconds"
+  ],
+  "source_jsonl": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/results/demo/cifar10_C100-P2_FedRaDR_seed22/metrics.jsonl",
+  "source_sha256": "334e4f2a4ff64235e4beedff20e6e0dedad6e1e9ec4fa12656c785c73c92cd4c"
+}

@@ -1,0 +1,32 @@
+{
+  "captured_at_utc": "2026-09-27T08:15:18.226873+00:00",
+  "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+  "commit_short": "6a24166",
+  "dirty": true,
+  "provenance": {
+    "created_at_utc": "2026-09-27T08:15:18.521398+00:00",
+    "git": {
+      "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+      "commit_short": "6a24166",
+      "dirty": true,
+      "remotes": {
+        "origin": {
+          "fetch": "https://github.com/wangc1343/FedRaDR.git",
+          "push": "https://github.com/wangc1343/FedRaDR.git"
+        }
+      },
+      "tags_at_commit": []
+    },
+    "historical": false,
+    "origin": "generated",
+    "script_version": "1.0"
+  },
+  "remotes": {
+    "origin": {
+      "fetch": "https://github.com/wangc1343/FedRaDR.git",
+      "push": "https://github.com/wangc1343/FedRaDR.git"
+    }
+  },
+  "schema_version": "fedradr.code-version.v1",
+  "tags_at_commit": []
+}

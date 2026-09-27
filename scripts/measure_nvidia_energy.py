@@ -49,6 +49,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run a command while sampling NVIDIA GPU power.")
     parser.add_argument("--gpu-index", type=int, default=0)
     parser.add_argument("--interval-ms", type=int, default=100)
+    parser.add_argument("--warmup-excluded", type=int, default=1)
+    parser.add_argument("--metadata-json", type=Path, help="Optional workload metadata JSON merged into the summary.")
     parser.add_argument("--output-prefix", type=Path, required=True)
     parser.add_argument("command", nargs=argparse.REMAINDER)
     args = parser.parse_args()
@@ -57,6 +59,8 @@ def main() -> None:
         parser.error("a child command is required after --")
     if args.interval_ms <= 0:
         parser.error("--interval-ms must be positive")
+    if args.warmup_excluded < 0:
+        parser.error("--warmup-excluded must be nonnegative")
 
     identity = nvidia_query("name,driver_version", args.gpu_index)
     args.output_prefix.parent.mkdir(parents=True, exist_ok=True)
@@ -107,12 +111,18 @@ def main() -> None:
         "gpu_index": args.gpu_index,
         "gpu_identity_and_driver": identity,
         "sampling_interval_ms": args.interval_ms,
+        "warmup_runs_excluded": args.warmup_excluded,
         "elapsed_seconds": elapsed,
         "sample_count": len(raw_samples),
         "query_error_count": query_errors,
         "integrated_energy_joules": integrate_power_samples(integration_samples),
         "raw_samples": str(csv_path),
     }
+    if args.metadata_json:
+        metadata = json.loads(args.metadata_json.read_text(encoding="utf-8"))
+        if not isinstance(metadata, dict):
+            raise ValueError("--metadata-json must contain an object")
+        summary["workload_metadata"] = metadata
     json_path = args.output_prefix.with_suffix(".summary.json")
     json_path.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, indent=2))

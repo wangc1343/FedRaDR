@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "baseline_tuning": {
+      "complete": false,
+      "errors": [
+        "exact baseline grids and selections are missing"
+      ]
+    },
+    "code_version": {
+      "complete": false,
+      "errors": [
+        "a clean tagged code version is required"
+      ]
+    },
+    "partitions": {
+      "complete": false,
+      "errors": [
+        "historical/generated partition files are missing"
+      ],
+      "found": 0,
+      "required": 51
+    },
+    "power_traces": {
+      "complete": false,
+      "errors": [
+        "raw power traces are missing"
+      ],
+      "found": 0,
+      "required": 12
+    },
+    "raw_logs": {
+      "complete": false,
+      "errors": [
+        "valid per-round metrics.jsonl evidence is missing"
+      ],
+      "found": 5,
+      "invalid": 3
+    },
+    "schedules": {
+      "complete": true,
+      "errors": [],
+      "found": 15,
+      "required": 15
+    }
+  },
+  "complete": false,
+  "generated_at_utc": "2026-09-27T08:48:43.124245+00:00",
+  "policy": "Incomplete audits are expected until historical partitions, raw logs, traces, baseline grids, and a tagged clean commit are supplied.",
+  "provenance": {
+    "created_at_utc": "2026-09-27T08:48:43.124245+00:00",
+    "git": {
+      "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+      "commit_short": "6a24166",
+      "dirty": true,
+      "remotes": {
+        "origin": {
+          "fetch": "https://github.com/wangc1343/FedRaDR.git",
+          "push": "https://github.com/wangc1343/FedRaDR.git"
+        }
+      },
+      "tags_at_commit": []
+    },
+    "historical": false,
+    "origin": "generated",
+    "script_version": "1.0"
+  },
+  "schema_version": "fedradr.bundle-audit.v1"
+}

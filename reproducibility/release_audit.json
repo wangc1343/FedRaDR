@@ -1,0 +1,46 @@
+{
+  "complete": false,
+  "checks": {
+    "partition_files": {
+      "found": 0,
+      "required": 51,
+      "complete": false
+    },
+    "client_schedules": {
+      "found": 15,
+      "required": 15,
+      "complete": true
+    },
+    "configuration_records": {
+      "found": 4,
+      "required": 4,
+      "complete": true
+    },
+    "baseline_tuning_details": {
+      "complete": false
+    },
+    "code_version": {
+      "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+      "tags_at_commit": [],
+      "dirty": true,
+      "complete": false
+    },
+    "per_round_logs": {
+      "found": 0,
+      "required": 240,
+      "scope": "Appendix B: 8 settings x 10 methods x 3 seeds",
+      "complete": false
+    },
+    "power_traces": {
+      "found": 0,
+      "required": 12,
+      "scope": "Appendix D: 4 variants x 3 seeds",
+      "complete": false
+    },
+    "reported_result_tables": {
+      "found": 5,
+      "required": 5,
+      "complete": true
+    }
+  }
+}

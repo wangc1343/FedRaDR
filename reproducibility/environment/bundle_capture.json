@@ -1,0 +1,43 @@
+{
+  "captured_at_utc": "2026-09-27T08:15:18.817028+00:00",
+  "git": {
+    "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+    "commit_short": "6a24166",
+    "dirty": true,
+    "remotes": {
+      "origin": {
+        "fetch": "https://github.com/wangc1343/FedRaDR.git",
+        "push": "https://github.com/wangc1343/FedRaDR.git"
+      }
+    },
+    "tags_at_commit": []
+  },
+  "machine": "AMD64",
+  "packages": {
+    "numpy": "2.3.5",
+    "torch": null,
+    "torchvision": null
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+  "provenance": {
+    "created_at_utc": "2026-09-27T08:15:19.237884+00:00",
+    "git": {
+      "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+      "commit_short": "6a24166",
+      "dirty": true,
+      "remotes": {
+        "origin": {
+          "fetch": "https://github.com/wangc1343/FedRaDR.git",
+          "push": "https://github.com/wangc1343/FedRaDR.git"
+        }
+      },
+      "tags_at_commit": []
+    },
+    "historical": false,
+    "origin": "generated",
+    "script_version": "1.0"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "schema_version": "fedradr.environment.v1"
+}

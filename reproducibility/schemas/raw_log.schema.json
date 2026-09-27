@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FedRaDR per-round metric record",
+  "type": "object",
+  "required": ["round", "test_accuracy", "train_objective", "mfg", "hfr_tau", "downlink_bytes", "uplink_bytes", "cumulative_serialized_bytes", "single_device_elapsed_seconds"],
+  "properties": {
+    "round": {"type": "integer", "minimum": 0},
+    "test_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+    "train_objective": {"type": "number"},
+    "mfg": {"type": "number", "minimum": 0},
+    "hfr_tau": {"type": ["number", "null"]},
+    "downlink_bytes": {"type": "integer", "minimum": 0},
+    "uplink_bytes": {"type": "integer", "minimum": 0},
+    "cumulative_serialized_bytes": {"type": "integer", "minimum": 0},
+    "single_device_elapsed_seconds": {"type": "number", "minimum": 0}
+  }
+}

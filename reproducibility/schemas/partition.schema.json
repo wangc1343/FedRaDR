@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FedRaDR serialized partition payload",
+  "type": "object",
+  "required": ["client_indices", "n_client", "dataset", "partition_type", "hyper", "seed", "index_basis"],
+  "properties": {
+    "client_indices": {"type": "array", "items": {"type": "array", "items": {"type": "integer", "minimum": 0}}},
+    "n_client": {"type": "integer", "minimum": 1},
+    "dataset": {"type": "string"},
+    "partition_type": {"enum": ["D1", "D2", "P1", "P2"]},
+    "hyper": {"type": "object"},
+    "seed": {"enum": [20, 21, 22]},
+    "index_basis": {"type": "string"},
+    "sample_count": {"type": "integer", "minimum": 0},
+    "labels_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "algorithm_version": {"type": "string"},
+    "historical": {"type": "boolean"}
+  }
+}

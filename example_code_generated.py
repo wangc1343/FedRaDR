@@ -15,7 +15,7 @@ n_clnt= 20
 n_cls = 5
 avg_data = 200
 
-data_obj = DatasetSynthetic(alpha=alpha, beta=beta, iid_sol=iid_sol, iid_data=iid_data, n_dim=n_dim, n_clnt=n_clnt, n_cls=n_cls, avg_data=avg_data, data_path=data_path, name_prefix=name_prefix)
+data_obj = DatasetGenerated(alpha=alpha, beta=beta, iid_sol=iid_sol, iid_data=iid_data, n_dim=n_dim, n_clnt=n_clnt, n_cls=n_cls, avg_data=avg_data, data_path=data_path, name_prefix=name_prefix)
 
 
 

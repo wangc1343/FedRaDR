@@ -15,6 +15,6 @@ def test_partition_payload_validation() -> None:
         "partition_type": "D1",
         "hyper": {"alpha": 0.3, "n_class_per_client": None},
         "seed": 20,
+        "index_basis": "input_labels_array_order",
     }
     assert validate_payload(payload, clients=2, seed=20, expected_hyper={"alpha": 0.3}) == []
-

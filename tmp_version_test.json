@@ -1,0 +1,14 @@
+{
+  "captured_at_utc": "2026-09-27T08:32:36.775098+00:00",
+  "repository": "C:\\Users\\admin\\Documents\\\u8bba\u6587\u6295\u7a3f\\FedRaDR",
+  "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+  "commit_short": "6a24166",
+  "tags_at_commit": [],
+  "dirty": true,
+  "remotes": {
+    "origin": {
+      "fetch": "https://github.com/wangc1343/FedRaDR.git",
+      "push": "https://github.com/wangc1343/FedRaDR.git"
+    }
+  }
+}

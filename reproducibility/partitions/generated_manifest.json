@@ -1,0 +1,362 @@
+{
+  "schema_version": "fedradr.generated-partitions.v1",
+  "records": [
+    {
+      "path": "reproducibility/partitions/cifar10_N100_D1_seed20.pkl",
+      "sha256": "4bf518ff179c4eb41653a5c6f9863c3ae60482447e36077bc804fed5b475a713",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_D1_seed21.pkl",
+      "sha256": "c2ee73ad3b3e826122cfa2ea9a7b2da5dee509def5d73a50d682d4197a6eb0b6",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_D1_seed22.pkl",
+      "sha256": "45d039d38a6bcbd0860a980b761a75f40bab9ec7d9c3bbd8119400c813dd531c",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_D2_seed20.pkl",
+      "sha256": "66785d24c66c51c534de195eb69aa34a348c4df51a8b4d90cd614192137d2ae6",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_D2_seed21.pkl",
+      "sha256": "f5ab2e575239d639738a91af81f1a10f3bccf73973d71a2a573062d8bc494689",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_D2_seed22.pkl",
+      "sha256": "5b797cea0f40b8440d587feb31130e574de25d89722c226dd9ddbf6c0740672a",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_P1_seed20.pkl",
+      "sha256": "f03b8f37ec84f834cfb5b15411bd64458459f24fce927bc898f24fe67760b86b",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_P1_seed21.pkl",
+      "sha256": "cf86002909d60ecb9bba5d51339c4b06e35d373676b050e52967ac078be65a46",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_P1_seed22.pkl",
+      "sha256": "3d4de69f85330d1575dfa317f8f4f182a736423c3069f2315a18e359622106c2",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_P2_seed20.pkl",
+      "sha256": "c104ce19b7e7537987a61eff6dabed8a7f0cc4452b5131fe63f444215fa3fdad",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_P2_seed21.pkl",
+      "sha256": "f105dc3a305922a2103a2dd2fda7d8afa2f7e56e0de927bc6bd0eeb1dc032bb3",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N100_P2_seed22.pkl",
+      "sha256": "4224893d706f7e54ab8d9b38cb8adde2bbbc7fa3395c4d442a3d1014698c1383",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_D1_seed20.pkl",
+      "sha256": "a7e69376029e5d2700d0430a9749a3237182258456a04bed75da60926f075036",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_D1_seed21.pkl",
+      "sha256": "6a34d6abdd37a99285c0bc4a3b8d5f6b10642ee7304cbe1b7d271f7e00c940c6",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_D1_seed22.pkl",
+      "sha256": "6d413a5b821ef17d4cc1c788683a6acb5aa746486ac41186328a14172b1f7077",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_D2_seed20.pkl",
+      "sha256": "70df0aefca21a783b093bd6bda6917f823315237339d9439057148b431b2fa94",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_D2_seed21.pkl",
+      "sha256": "a54d81ed69c33045cff4fdaea6e4ee7fc5a0e06149c0c399d1f2f1421e12802a",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_D2_seed22.pkl",
+      "sha256": "be79ac86f99b51e162f12f8051586270095d345df334cabd9edc05dd8075e3d7",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_P1_seed20.pkl",
+      "sha256": "f829401cf4b54418a9c2298c72339510fde8749b5c0dec8e39c3cdbf38aeb3e6",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_P1_seed21.pkl",
+      "sha256": "11f8dcf3165afb6c596a3914acf17bcd02096ba31ee4df281fd4d285f2ef124b",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_P1_seed22.pkl",
+      "sha256": "d100f7b5c4143db83a3cc1e829ed0d839736a86dd4e3b33ff5bcba06ade5e179",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_P2_seed20.pkl",
+      "sha256": "75c902ce51233d8930990673873015538884dfabea0bc65491c3500ad1f22998",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_P2_seed21.pkl",
+      "sha256": "6a981262b833c00b60f3959276d89ef97fa1086078c920cf1c8b997241ddb905",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar10_N500_P2_seed22.pkl",
+      "sha256": "d9a275f833f8462f8a1c8e94d0b44769abd9cae53572283910eee5ed8bfeb74d",
+      "sample_count": 1000,
+      "dataset": "cifar10",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_D1_seed20.pkl",
+      "sha256": "3ee0329ba3eecba5e57f7b9aa32a99a2001c93a066dcb6081a30c9ab8c9e1517",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_D1_seed21.pkl",
+      "sha256": "d52bfb5abf014303b52d38d076c3ad78618b965aaa4277d8a674917cabc27205",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_D1_seed22.pkl",
+      "sha256": "ae640c4493ff030bfee33e44baa2d0bf501ad52b749d352adf1008eed080f032",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_D2_seed20.pkl",
+      "sha256": "1a7339110ce59eb159002086324f13aa6c6180c720d16a0a30a5525f428df78a",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_D2_seed21.pkl",
+      "sha256": "1f8720ee33547229bdb731d92c3def75d865d63e8f25175e4490564fee8944b8",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_D2_seed22.pkl",
+      "sha256": "52d3297c5eac59a3f86d1d46c4c23b8dbfaab7630cf637b6fd214987da1e00ad",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_P1_seed20.pkl",
+      "sha256": "9ef6edfe639ff2dabd3bb3491467c0ec371afb92d0c83b22bafcc9cec2c12d02",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_P1_seed21.pkl",
+      "sha256": "5e075cea28592e00b65499570c0a830e1be5865574f3e6a23c03be8e38dc30f4",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_P1_seed22.pkl",
+      "sha256": "9ab9913611c08a93e2e2c911577a59fd375a674ae395daad0dba53fbca755328",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_P2_seed20.pkl",
+      "sha256": "96f0b07f7da709b7752c43654cc4124a5e852cd4bf5a840481585b951b372739",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_P2_seed21.pkl",
+      "sha256": "035ac146457bc6fe206ce2379357f28300e5bc3c60891d20c76ac42c911ac115",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N100_P2_seed22.pkl",
+      "sha256": "a9b5335b9b3edf03de136d80648f589fffc9a0b424bf68b983038fc2e1dbdc29",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_D1_seed20.pkl",
+      "sha256": "acb2994358941fb1fc923c1d2694ed60227ff9ffcab439423384f37351abc1ed",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_D1_seed21.pkl",
+      "sha256": "ca1af0698fef6e237ca124186bcca0d0ee6d7039094a7fc96d8238c317e51b79",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_D1_seed22.pkl",
+      "sha256": "b9ca9dc1116476751fe3b707852f17344a398dfeb917c834fc2efa17d84ba67d",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_D2_seed20.pkl",
+      "sha256": "57fdbc76420d273a75b448adc8115c8727468734abde4e0e0c7083a10ce458fc",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_D2_seed21.pkl",
+      "sha256": "a08bc0fee1e993dc02e4ab16bcb3b1ede197af2bb300e5ffc05e5f3159f38dfd",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_D2_seed22.pkl",
+      "sha256": "8b63591d19c9963899ecf7becf665750660c70452a36a84547f396f18626f0d7",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_P1_seed20.pkl",
+      "sha256": "93fccf7051e9477a4fa9fef1561880520bd792a6a21f000238b926053cfca5a4",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_P1_seed21.pkl",
+      "sha256": "1cdec19d5d33c715e6642c012d042aa9bfe53aaf99d6aef062b821ed512a2714",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_P1_seed22.pkl",
+      "sha256": "d7d0153c2cabd24e49dc895924d19f764501cb7244ae78c361c890a703dafff5",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_P2_seed20.pkl",
+      "sha256": "f41dad8e8273f7540a3d4f6b7a7b6256a99aa5e86da3aa0a7248d120df8c120b",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_P2_seed21.pkl",
+      "sha256": "305d4b21ddd0e8ea782fc71bda1d43662de9ff04cb4eb691ddd8f6f81347664b",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/cifar100_N500_P2_seed22.pkl",
+      "sha256": "08a79cad686fbbc6e1bca348d03ddbfd9aec1a977d20667963b82328d82f7176",
+      "sample_count": 1000,
+      "dataset": "cifar100",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/tinyimagenet_N100_D1_seed20.pkl",
+      "sha256": "d89872901fad560b9240c2a11c65394b8b771f95052b743c14999768561bf56a",
+      "sample_count": 2000,
+      "dataset": "tinyimagenet",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/tinyimagenet_N100_D1_seed21.pkl",
+      "sha256": "ab6f263649548c5a4bb9bf1c641187607b9a352b1e051f9b7d6222f8eab68975",
+      "sample_count": 2000,
+      "dataset": "tinyimagenet",
+      "historical": false
+    },
+    {
+      "path": "reproducibility/partitions/tinyimagenet_N100_D1_seed22.pkl",
+      "sha256": "80ad839fbe6887912b2d94cebb7579ae9e5d4bf4b3e0427659f0841a9daebbb3",
+      "sample_count": 2000,
+      "dataset": "tinyimagenet",
+      "historical": false
+    }
+  ]
+}

@@ -130,6 +130,7 @@ def train_FedRaDR(
     evaluator: Callable | None = None,
     device: str | torch.device | None = None,
     checkpoint_every: int = 0,
+    run_metadata: dict[str, object] | None = None,
 ) -> torch.nn.Module:
     """Run FedRaDR with the cloud/state equations from official FedDC.
 
@@ -173,6 +174,8 @@ def train_FedRaDR(
 
     run_config = {
         "seed": seed,
+        "experiment_seed": seed,
+        "initial_model_seed": (run_metadata or {}).get("initial_model_seed", seed),
         "learning_rate": learning_rate,
         "learning_rate_decay": learning_rate_decay,
         "batch_size": batch_size,
@@ -183,6 +186,7 @@ def train_FedRaDR(
         "checkpoint_every": checkpoint_every,
         "client_schedule_sha256": _schedule_hash(client_schedule),
         "fedradr": config.__dict__,
+        "provenance": run_metadata or {},
     }
     (output_dir / "config.json").write_text(
         json.dumps(run_config, indent=2, sort_keys=True) + "\n", encoding="utf-8"

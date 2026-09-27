@@ -1,0 +1,14 @@
+{
+  "captured_at_utc": "2026-09-27T08:32:36.377540+00:00",
+  "cuda_runtime": null,
+  "cudnn": null,
+  "driver_version": null,
+  "git_commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+  "git_dirty": true,
+  "gpu_name": null,
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "pytorch": null,
+  "repository": "C:\\Users\\admin\\Documents\\\u8bba\u6587\u6295\u7a3f\\FedRaDR",
+  "torchvision": null
+}

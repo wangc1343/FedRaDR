@@ -22,7 +22,15 @@ SPECS = {
         "partitions": {"D1": {"alpha": 0.1}},
     },
 }
-REQUIRED_KEYS = {"client_indices", "n_client", "dataset", "partition_type", "hyper", "seed"}
+REQUIRED_KEYS = {
+    "client_indices",
+    "n_client",
+    "dataset",
+    "partition_type",
+    "hyper",
+    "seed",
+    "index_basis",
+}
 
 
 def expected_files() -> list[tuple[str, int, str, int, dict[str, float | int]]]:
@@ -35,7 +43,16 @@ def expected_files() -> list[tuple[str, int, str, int, dict[str, float | int]]]:
     return rows
 
 
-def validate_payload(payload: object, clients: int, seed: int, expected_hyper: dict[str, float | int]) -> list[str]:
+def validate_payload(
+    payload: object,
+    clients: int,
+    seed: int,
+    expected_hyper: dict[str, float | int],
+    *,
+    expected_dataset: str | None = None,
+    expected_partition: str | None = None,
+    expected_sample_count: int | None = None,
+) -> list[str]:
     if not isinstance(payload, dict):
         return ["root object is not a dictionary"]
     errors = [f"missing key: {key}" for key in sorted(REQUIRED_KEYS - payload.keys())]
@@ -45,6 +62,12 @@ def validate_payload(payload: object, clients: int, seed: int, expected_hyper: d
         errors.append(f"n_client={payload['n_client']} expected {clients}")
     if payload["seed"] != seed:
         errors.append(f"seed={payload['seed']} expected {seed}")
+    if expected_dataset is not None and str(payload.get("dataset", "")).lower() != expected_dataset.lower():
+        errors.append(f"dataset={payload.get('dataset')!r} expected {expected_dataset!r}")
+    if expected_partition is not None and str(payload.get("partition_type", "")).upper() != expected_partition.upper():
+        errors.append(f"partition_type={payload.get('partition_type')!r} expected {expected_partition!r}")
+    if payload.get("index_basis") != "input_labels_array_order":
+        errors.append("index_basis must be input_labels_array_order")
     indices = payload["client_indices"]
     if not isinstance(indices, list) or len(indices) != clients:
         errors.append("client_indices must be a list with one entry per client")
@@ -57,6 +80,15 @@ def validate_payload(payload: object, clients: int, seed: int, expected_hyper: d
             flattened.extend(values)
         if len(flattened) != len(set(flattened)):
             errors.append("sample indices overlap across clients")
+        sample_count = payload.get("sample_count", expected_sample_count)
+        if sample_count is not None:
+            if not isinstance(sample_count, int) or sample_count < 0:
+                errors.append("sample_count must be a nonnegative integer")
+            else:
+                if expected_sample_count is not None and sample_count != expected_sample_count:
+                    errors.append(f"sample_count={sample_count} expected {expected_sample_count}")
+                if sorted(flattened) != list(range(sample_count)):
+                    errors.append("client indices must cover every sample exactly once")
     hyper = payload["hyper"]
     if not isinstance(hyper, dict):
         errors.append("hyper must be a dictionary")
@@ -86,7 +118,14 @@ def main() -> None:
             payload_bytes = path.read_bytes()
             try:
                 payload = pickle.loads(payload_bytes)
-                errors = validate_payload(payload, clients, seed, hyper)
+                errors = validate_payload(
+                    payload,
+                    clients,
+                    seed,
+                    hyper,
+                    expected_dataset=dataset,
+                    expected_partition=partition,
+                )
             except Exception as error:
                 errors = [f"pickle load failed: {error}"]
             record.update({

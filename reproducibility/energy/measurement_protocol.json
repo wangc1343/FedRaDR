@@ -1,0 +1,59 @@
+{
+  "desktop_nvidia": {
+    "command_template": "python scripts/measure_nvidia_energy.py --gpu-index 0 --interval-ms 100 --output-prefix <prefix> -- <experiment command>",
+    "device": "NVIDIA RTX 4090",
+    "measured_seeds": [
+      20,
+      21,
+      22
+    ],
+    "power_scope": "gpu_board",
+    "required_metadata": [
+      "gpu_index",
+      "gpu_identity_and_driver",
+      "command",
+      "return_code",
+      "elapsed_seconds",
+      "sample_count"
+    ],
+    "sampling_interval_ms": 100,
+    "warmup_runs_excluded": 1
+  },
+  "integration": "trapezoidal over timestamped power samples",
+  "jetson_orin": {
+    "batch_size": 32,
+    "command_template": "python scripts/measure_jetson_energy.py --rail VDD_IN --interval-ms 100 --output-prefix <prefix> -- <experiment command>",
+    "dataset": "Tiny-ImageNet",
+    "device": "Jetson AGX Orin",
+    "fixed_client_shard_samples": 1000,
+    "local_epochs": 5,
+    "measured_seeds": [
+      20,
+      21,
+      22
+    ],
+    "mode": "MAXN",
+    "model": "ResNet-18-GN",
+    "power_scope": "explicit tegrastats rail (for example VDD_IN)",
+    "required_metadata": [
+      "rail",
+      "raw_tegrastats_line",
+      "timestamps",
+      "sample_count"
+    ],
+    "sampling_interval_ms": 100,
+    "warmup_rounds_excluded": 1
+  },
+  "missing_evidence_rule": "A protocol file is not a measurement; retain raw traces before reporting joules.",
+  "required_raw_files": [
+    "*.samples.csv",
+    "*.summary.json"
+  ],
+  "schema_version": "fedradr.energy.v1",
+  "variants": [
+    "FedAvg",
+    "FedRaDR-exact",
+    "FedRaDR-mini-batch",
+    "FedRaDR-EMA"
+  ]
+}

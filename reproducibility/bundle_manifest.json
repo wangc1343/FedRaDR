@@ -1,0 +1,961 @@
+{
+  "artifacts": {
+    "partitions": [
+      {
+        "bytes": 3566,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_D1_seed20.pkl",
+        "sha256": "3ee0329ba3eecba5e57f7b9aa32a99a2001c93a066dcb6081a30c9ab8c9e1517"
+      },
+      {
+        "bytes": 3565,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_D1_seed21.pkl",
+        "sha256": "d52bfb5abf014303b52d38d076c3ad78618b965aaa4277d8a674917cabc27205"
+      },
+      {
+        "bytes": 3566,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_D1_seed22.pkl",
+        "sha256": "ae640c4493ff030bfee33e44baa2d0bf501ad52b749d352adf1008eed080f032"
+      },
+      {
+        "bytes": 3559,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_D2_seed20.pkl",
+        "sha256": "1a7339110ce59eb159002086324f13aa6c6180c720d16a0a30a5525f428df78a"
+      },
+      {
+        "bytes": 3561,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_D2_seed21.pkl",
+        "sha256": "1f8720ee33547229bdb731d92c3def75d865d63e8f25175e4490564fee8944b8"
+      },
+      {
+        "bytes": 3557,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_D2_seed22.pkl",
+        "sha256": "52d3297c5eac59a3f86d1d46c4c23b8dbfaab7630cf637b6fd214987da1e00ad"
+      },
+      {
+        "bytes": 3575,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_P1_seed20.pkl",
+        "sha256": "9ef6edfe639ff2dabd3bb3491467c0ec371afb92d0c83b22bafcc9cec2c12d02"
+      },
+      {
+        "bytes": 3575,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_P1_seed21.pkl",
+        "sha256": "5e075cea28592e00b65499570c0a830e1be5865574f3e6a23c03be8e38dc30f4"
+      },
+      {
+        "bytes": 3575,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_P1_seed22.pkl",
+        "sha256": "9ab9913611c08a93e2e2c911577a59fd375a674ae395daad0dba53fbca755328"
+      },
+      {
+        "bytes": 3508,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_P2_seed20.pkl",
+        "sha256": "96f0b07f7da709b7752c43654cc4124a5e852cd4bf5a840481585b951b372739"
+      },
+      {
+        "bytes": 3513,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_P2_seed21.pkl",
+        "sha256": "035ac146457bc6fe206ce2379357f28300e5bc3c60891d20c76ac42c911ac115"
+      },
+      {
+        "bytes": 3508,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N100_P2_seed22.pkl",
+        "sha256": "a9b5335b9b3edf03de136d80648f589fffc9a0b424bf68b983038fc2e1dbdc29"
+      },
+      {
+        "bytes": 4832,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_D1_seed20.pkl",
+        "sha256": "acb2994358941fb1fc923c1d2694ed60227ff9ffcab439423384f37351abc1ed"
+      },
+      {
+        "bytes": 4810,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_D1_seed21.pkl",
+        "sha256": "ca1af0698fef6e237ca124186bcca0d0ee6d7039094a7fc96d8238c317e51b79"
+      },
+      {
+        "bytes": 4823,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_D1_seed22.pkl",
+        "sha256": "b9ca9dc1116476751fe3b707852f17344a398dfeb917c834fc2efa17d84ba67d"
+      },
+      {
+        "bytes": 4780,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_D2_seed20.pkl",
+        "sha256": "57fdbc76420d273a75b448adc8115c8727468734abde4e0e0c7083a10ce458fc"
+      },
+      {
+        "bytes": 4783,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_D2_seed21.pkl",
+        "sha256": "a08bc0fee1e993dc02e4ab16bcb3b1ede197af2bb300e5ffc05e5f3159f38dfd"
+      },
+      {
+        "bytes": 4783,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_D2_seed22.pkl",
+        "sha256": "8b63591d19c9963899ecf7becf665750660c70452a36a84547f396f18626f0d7"
+      },
+      {
+        "bytes": 4448,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_P1_seed20.pkl",
+        "sha256": "93fccf7051e9477a4fa9fef1561880520bd792a6a21f000238b926053cfca5a4"
+      },
+      {
+        "bytes": 4447,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_P1_seed21.pkl",
+        "sha256": "1cdec19d5d33c715e6642c012d042aa9bfe53aaf99d6aef062b821ed512a2714"
+      },
+      {
+        "bytes": 4456,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_P1_seed22.pkl",
+        "sha256": "d7d0153c2cabd24e49dc895924d19f764501cb7244ae78c361c890a703dafff5"
+      },
+      {
+        "bytes": 4329,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_P2_seed20.pkl",
+        "sha256": "f41dad8e8273f7540a3d4f6b7a7b6256a99aa5e86da3aa0a7248d120df8c120b"
+      },
+      {
+        "bytes": 4329,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_P2_seed21.pkl",
+        "sha256": "305d4b21ddd0e8ea782fc71bda1d43662de9ff04cb4eb691ddd8f6f81347664b"
+      },
+      {
+        "bytes": 4334,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar100_N500_P2_seed22.pkl",
+        "sha256": "08a79cad686fbbc6e1bca348d03ddbfd9aec1a977d20667963b82328d82f7176"
+      },
+      {
+        "bytes": 3566,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_D1_seed20.pkl",
+        "sha256": "4bf518ff179c4eb41653a5c6f9863c3ae60482447e36077bc804fed5b475a713"
+      },
+      {
+        "bytes": 3567,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_D1_seed21.pkl",
+        "sha256": "c2ee73ad3b3e826122cfa2ea9a7b2da5dee509def5d73a50d682d4197a6eb0b6"
+      },
+      {
+        "bytes": 3567,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_D1_seed22.pkl",
+        "sha256": "45d039d38a6bcbd0860a980b761a75f40bab9ec7d9c3bbd8119400c813dd531c"
+      },
+      {
+        "bytes": 3568,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_D2_seed20.pkl",
+        "sha256": "66785d24c66c51c534de195eb69aa34a348c4df51a8b4d90cd614192137d2ae6"
+      },
+      {
+        "bytes": 3568,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_D2_seed21.pkl",
+        "sha256": "f5ab2e575239d639738a91af81f1a10f3bccf73973d71a2a573062d8bc494689"
+      },
+      {
+        "bytes": 3568,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_D2_seed22.pkl",
+        "sha256": "5b797cea0f40b8440d587feb31130e574de25d89722c226dd9ddbf6c0740672a"
+      },
+      {
+        "bytes": 3574,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_P1_seed20.pkl",
+        "sha256": "f03b8f37ec84f834cfb5b15411bd64458459f24fce927bc898f24fe67760b86b"
+      },
+      {
+        "bytes": 3574,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_P1_seed21.pkl",
+        "sha256": "cf86002909d60ecb9bba5d51339c4b06e35d373676b050e52967ac078be65a46"
+      },
+      {
+        "bytes": 3574,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_P1_seed22.pkl",
+        "sha256": "3d4de69f85330d1575dfa317f8f4f182a736423c3069f2315a18e359622106c2"
+      },
+      {
+        "bytes": 3574,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_P2_seed20.pkl",
+        "sha256": "c104ce19b7e7537987a61eff6dabed8a7f0cc4452b5131fe63f444215fa3fdad"
+      },
+      {
+        "bytes": 3574,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_P2_seed21.pkl",
+        "sha256": "f105dc3a305922a2103a2dd2fda7d8afa2f7e56e0de927bc6bd0eeb1dc032bb3"
+      },
+      {
+        "bytes": 3574,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N100_P2_seed22.pkl",
+        "sha256": "4224893d706f7e54ab8d9b38cb8adde2bbbc7fa3395c4d442a3d1014698c1383"
+      },
+      {
+        "bytes": 4887,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_D1_seed20.pkl",
+        "sha256": "a7e69376029e5d2700d0430a9749a3237182258456a04bed75da60926f075036"
+      },
+      {
+        "bytes": 4878,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_D1_seed21.pkl",
+        "sha256": "6a34d6abdd37a99285c0bc4a3b8d5f6b10642ee7304cbe1b7d271f7e00c940c6"
+      },
+      {
+        "bytes": 4887,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_D1_seed22.pkl",
+        "sha256": "6d413a5b821ef17d4cc1c788683a6acb5aa746486ac41186328a14172b1f7077"
+      },
+      {
+        "bytes": 4888,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_D2_seed20.pkl",
+        "sha256": "70df0aefca21a783b093bd6bda6917f823315237339d9439057148b431b2fa94"
+      },
+      {
+        "bytes": 4912,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_D2_seed21.pkl",
+        "sha256": "a54d81ed69c33045cff4fdaea6e4ee7fc5a0e06149c0c399d1f2f1421e12802a"
+      },
+      {
+        "bytes": 4923,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_D2_seed22.pkl",
+        "sha256": "be79ac86f99b51e162f12f8051586270095d345df334cabd9edc05dd8075e3d7"
+      },
+      {
+        "bytes": 4861,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_P1_seed20.pkl",
+        "sha256": "f829401cf4b54418a9c2298c72339510fde8749b5c0dec8e39c3cdbf38aeb3e6"
+      },
+      {
+        "bytes": 4870,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_P1_seed21.pkl",
+        "sha256": "11f8dcf3165afb6c596a3914acf17bcd02096ba31ee4df281fd4d285f2ef124b"
+      },
+      {
+        "bytes": 4862,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_P1_seed22.pkl",
+        "sha256": "d100f7b5c4143db83a3cc1e829ed0d839736a86dd4e3b33ff5bcba06ade5e179"
+      },
+      {
+        "bytes": 4594,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_P2_seed20.pkl",
+        "sha256": "75c902ce51233d8930990673873015538884dfabea0bc65491c3500ad1f22998"
+      },
+      {
+        "bytes": 4606,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_P2_seed21.pkl",
+        "sha256": "6a981262b833c00b60f3959276d89ef97fa1086078c920cf1c8b997241ddb905"
+      },
+      {
+        "bytes": 4590,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/cifar10_N500_P2_seed22.pkl",
+        "sha256": "d9a275f833f8462f8a1c8e94d0b44769abd9cae53572283910eee5ed8bfeb74d"
+      },
+      {
+        "bytes": 6572,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/tinyimagenet_N100_D1_seed20.pkl",
+        "sha256": "d89872901fad560b9240c2a11c65394b8b771f95052b743c14999768561bf56a"
+      },
+      {
+        "bytes": 6573,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/tinyimagenet_N100_D1_seed21.pkl",
+        "sha256": "ab6f263649548c5a4bb9bf1c641187607b9a352b1e051f9b7d6222f8eab68975"
+      },
+      {
+        "bytes": 6573,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/partitions/tinyimagenet_N100_D1_seed22.pkl",
+        "sha256": "80ad839fbe6887912b2d94cebb7579ae9e5d4bf4b3e0427659f0841a9daebbb3"
+      }
+    ],
+    "power_traces": [],
+    "raw_logs": [
+      {
+        "bytes": 1034,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/smoke_current.metrics.jsonl",
+        "sha256": "c4e84ff85dc3f260fb0becec187e3ee9bce861212fa15844a0b6806837aee152"
+      },
+      {
+        "bytes": 1523,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/smoke_hfr_check.metrics.jsonl",
+        "sha256": "0ddf32b4798b0f6051a642f2acf4af2357f265e3fff4de7e566eef129fe5bd17"
+      },
+      {
+        "bytes": 1035,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/smoke_repro_check.metrics.jsonl",
+        "sha256": "7c572d5ebf36d4f5508f7d3c50eb25be6edcf9d1205f1f8bd1efb75204653ddc"
+      },
+      {
+        "bytes": 1527,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/smoke_schema_check.metrics.jsonl",
+        "sha256": "64a6fc619c6209f9defbe4a92c4ff0c79dc8e67cc00506d4ab233439234d314c"
+      },
+      {
+        "bytes": 1034,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/smoke_user.metrics.jsonl",
+        "sha256": "c4e84ff85dc3f260fb0becec187e3ee9bce861212fa15844a0b6806837aee152"
+      },
+      {
+        "bytes": 292238,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedAvg_seed20.metrics.jsonl",
+        "sha256": "f41992e723bf9166ca1e3c5cf1ea1adb040a6dc29f1ee64dc8e10a91b3fa008c"
+      },
+      {
+        "bytes": 292189,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedAvg_seed21.metrics.jsonl",
+        "sha256": "b6690a18b90064b42c46d6da1f42e7876e407809864858e40d5774338f1f2ece"
+      },
+      {
+        "bytes": 292228,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedAvg_seed22.metrics.jsonl",
+        "sha256": "4e7dcbd96f63f8fe93bc4b99aa81d5449ef0893b0ecc6b1e9c82bffc5d76b88c"
+      },
+      {
+        "bytes": 292618,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedDyn_seed20.metrics.jsonl",
+        "sha256": "97ecac707467afde576bf77232766f157141d63025cfaf13e229d58b4cdcc76f"
+      },
+      {
+        "bytes": 292650,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedDyn_seed21.metrics.jsonl",
+        "sha256": "f9a1db9c342bdb97e178905dda01ace2b1fafcb06d6d59ca3cd75a63a235eb5b"
+      },
+      {
+        "bytes": 292595,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedDyn_seed22.metrics.jsonl",
+        "sha256": "0f8f478db8af55ec556bd0765840abe38c06f2ba953d5ca3cbf9b9dbc7f136c6"
+      },
+      {
+        "bytes": 292048,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedRaDR_seed20.metrics.jsonl",
+        "sha256": "edc65f61b5466443b056c28c1ab8782d463895b3ecbc67d9accbe5012e4fac00"
+      },
+      {
+        "bytes": 292273,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedRaDR_seed21.metrics.jsonl",
+        "sha256": "b4a2a56c86f2ef59cf28afd2ab181bb7e905cf9534f009f47284b9ea5acf0134"
+      },
+      {
+        "bytes": 292150,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedRaDR_seed22.metrics.jsonl",
+        "sha256": "a8bf6e8cd8b76213a192fcd1207ee8368277ec150ba285f4a1ef6d3a9b97bb0a"
+      },
+      {
+        "bytes": 292247,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedSKC_seed20.metrics.jsonl",
+        "sha256": "76efe8f40822469b8a00479d4c01c066b523d9cd27e4e704f34e151d9b29f773"
+      },
+      {
+        "bytes": 292484,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedSKC_seed21.metrics.jsonl",
+        "sha256": "b6c364f657dd67a033d1b7f2126199528241c02f44c40254ee6298636b11a9c0"
+      },
+      {
+        "bytes": 292531,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P10_FedSKC_seed22.metrics.jsonl",
+        "sha256": "430910303c8dde5540aadcf86a2602acf093904b94ddff42beef9a66f45b23a4"
+      },
+      {
+        "bytes": 296985,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedAvg_seed20.metrics.jsonl",
+        "sha256": "aa6b39c02b04ba46a2e0d77478e3e1749d1b8e4bb66ae3fdb16fda533be20d19"
+      },
+      {
+        "bytes": 297006,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedAvg_seed21.metrics.jsonl",
+        "sha256": "723e358a679959e8362431cf03cbacc8f6e02512441a310ce4cfa98e90f1bf21"
+      },
+      {
+        "bytes": 296970,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedAvg_seed22.metrics.jsonl",
+        "sha256": "19b2dabc64080ed9244a941267a961619a9c2d7e75d781524470bc0e373d422e"
+      },
+      {
+        "bytes": 297490,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedDyn_seed20.metrics.jsonl",
+        "sha256": "be4ffbf906e8d14426bb4e11cf6ec7356181c4f6b3fe144b970af24f3ebf297c"
+      },
+      {
+        "bytes": 297381,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedDyn_seed21.metrics.jsonl",
+        "sha256": "6e1fc1751c5d8e91e3fda3a45ac4d24818cf7fe3ca2b5a019eea3955d34b4cf4"
+      },
+      {
+        "bytes": 297412,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedDyn_seed22.metrics.jsonl",
+        "sha256": "9e62624a7f66980fe058c0fbb3f9cbc1fe834bce2854d1bf08106c21de705727"
+      },
+      {
+        "bytes": 296971,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedRaDR_seed20.metrics.jsonl",
+        "sha256": "2532ebf0658a295657e36995ec109cb8f4c4cf0e12461c08d911decf8c95cc95"
+      },
+      {
+        "bytes": 297123,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedRaDR_seed21.metrics.jsonl",
+        "sha256": "6c4ce3b355fa7f7c06133a0eb55bfd8d64ac1745b291f757a8f65c692ff2dcf2"
+      },
+      {
+        "bytes": 297171,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedRaDR_seed22.metrics.jsonl",
+        "sha256": "334e4f2a4ff64235e4beedff20e6e0dedad6e1e9ec4fa12656c785c73c92cd4c"
+      },
+      {
+        "bytes": 297352,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedSKC_seed20.metrics.jsonl",
+        "sha256": "f10bac32c6887263f872e21a50722e50fc1502bc12bcace65b27381380f1f8d9"
+      },
+      {
+        "bytes": 297377,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedSKC_seed21.metrics.jsonl",
+        "sha256": "1fecabf1d805cb695545695f93de390549fd6b91f109aa9522dadba00d65f0d4"
+      },
+      {
+        "bytes": 297250,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P2_FedSKC_seed22.metrics.jsonl",
+        "sha256": "157429711e4e44a4a23b8fbdb6e473fb632cd596a97d03062fbbf04d3c60fc36"
+      },
+      {
+        "bytes": 299116,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedAvg_seed20.metrics.jsonl",
+        "sha256": "e30b43afd0278250044a7cdb9426b2a49128bbfa836ac7412d17f89494383003"
+      },
+      {
+        "bytes": 299066,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedAvg_seed21.metrics.jsonl",
+        "sha256": "0abfae564abd6391c6385a907b048b295e0d51ebdab4b355921a9ea328cfa960"
+      },
+      {
+        "bytes": 299056,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedAvg_seed22.metrics.jsonl",
+        "sha256": "6bb40a2fea020be34ed921dbdc4cd9c5cf2054f7fced94724c28d3558a52989b"
+      },
+      {
+        "bytes": 299408,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedDyn_seed20.metrics.jsonl",
+        "sha256": "66a13880efb3ca30801383ee8f7c4228d1ba2a4501bd6b02775d29fb059629d9"
+      },
+      {
+        "bytes": 299436,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedDyn_seed21.metrics.jsonl",
+        "sha256": "5312bdfef2a234de1aebd50dbd882bda278d5bf8914c179c23fa471c7c050346"
+      },
+      {
+        "bytes": 299408,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedDyn_seed22.metrics.jsonl",
+        "sha256": "0cb6f48e9eb3265de576ef2fb2ed59be14f47cfeb43401a6fbd2df0a54a621d1"
+      },
+      {
+        "bytes": 299025,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedRaDR_seed20.metrics.jsonl",
+        "sha256": "9d155a9559f0438bfd2f46ec825dc76778aeccb069871a292726ce8fb1008058"
+      },
+      {
+        "bytes": 299185,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedRaDR_seed21.metrics.jsonl",
+        "sha256": "2b4c84ab2522c6ead1adbba447db08d991f7389a138052638eef7d7c3b4419d0"
+      },
+      {
+        "bytes": 299039,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedRaDR_seed22.metrics.jsonl",
+        "sha256": "38d363986c75a09698251b71654ea69c6be191cf7189f27d85e8abe2bc29ec0c"
+      },
+      {
+        "bytes": 299394,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedSKC_seed20.metrics.jsonl",
+        "sha256": "59b2c48fea7a7c2a4a609c102fac11e10b7f10fd7670619b9fa72a19ab65a671"
+      },
+      {
+        "bytes": 299377,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedSKC_seed21.metrics.jsonl",
+        "sha256": "d2d1d8a73033f5c73371b8fa7d895be228fc66eb6460a8c009491de1883cdc64"
+      },
+      {
+        "bytes": 299286,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/source/demo_cifar10_C100-P5_FedSKC_seed22.metrics.jsonl",
+        "sha256": "e7864a2d50f58d1cd8e83b6d40bc12388f5f111c935b3a6bbdffce3fa725f8a5"
+      },
+      {
+        "bytes": 292238,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedAvg_seed20.metrics.jsonl",
+        "sha256": "f41992e723bf9166ca1e3c5cf1ea1adb040a6dc29f1ee64dc8e10a91b3fa008c"
+      },
+      {
+        "bytes": 292189,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedAvg_seed21.metrics.jsonl",
+        "sha256": "b6690a18b90064b42c46d6da1f42e7876e407809864858e40d5774338f1f2ece"
+      },
+      {
+        "bytes": 292228,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedAvg_seed22.metrics.jsonl",
+        "sha256": "4e7dcbd96f63f8fe93bc4b99aa81d5449ef0893b0ecc6b1e9c82bffc5d76b88c"
+      },
+      {
+        "bytes": 292618,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedDyn_seed20.metrics.jsonl",
+        "sha256": "97ecac707467afde576bf77232766f157141d63025cfaf13e229d58b4cdcc76f"
+      },
+      {
+        "bytes": 292650,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedDyn_seed21.metrics.jsonl",
+        "sha256": "f9a1db9c342bdb97e178905dda01ace2b1fafcb06d6d59ca3cd75a63a235eb5b"
+      },
+      {
+        "bytes": 292595,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedDyn_seed22.metrics.jsonl",
+        "sha256": "0f8f478db8af55ec556bd0765840abe38c06f2ba953d5ca3cbf9b9dbc7f136c6"
+      },
+      {
+        "bytes": 292048,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedRaDR_seed20.metrics.jsonl",
+        "sha256": "edc65f61b5466443b056c28c1ab8782d463895b3ecbc67d9accbe5012e4fac00"
+      },
+      {
+        "bytes": 292273,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedRaDR_seed21.metrics.jsonl",
+        "sha256": "b4a2a56c86f2ef59cf28afd2ab181bb7e905cf9534f009f47284b9ea5acf0134"
+      },
+      {
+        "bytes": 292150,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedRaDR_seed22.metrics.jsonl",
+        "sha256": "a8bf6e8cd8b76213a192fcd1207ee8368277ec150ba285f4a1ef6d3a9b97bb0a"
+      },
+      {
+        "bytes": 292247,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedSKC_seed20.metrics.jsonl",
+        "sha256": "76efe8f40822469b8a00479d4c01c066b523d9cd27e4e704f34e151d9b29f773"
+      },
+      {
+        "bytes": 292484,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedSKC_seed21.metrics.jsonl",
+        "sha256": "b6c364f657dd67a033d1b7f2126199528241c02f44c40254ee6298636b11a9c0"
+      },
+      {
+        "bytes": 292531,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P10_FedSKC_seed22.metrics.jsonl",
+        "sha256": "430910303c8dde5540aadcf86a2602acf093904b94ddff42beef9a66f45b23a4"
+      },
+      {
+        "bytes": 296985,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedAvg_seed20.metrics.jsonl",
+        "sha256": "aa6b39c02b04ba46a2e0d77478e3e1749d1b8e4bb66ae3fdb16fda533be20d19"
+      },
+      {
+        "bytes": 297006,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedAvg_seed21.metrics.jsonl",
+        "sha256": "723e358a679959e8362431cf03cbacc8f6e02512441a310ce4cfa98e90f1bf21"
+      },
+      {
+        "bytes": 296970,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedAvg_seed22.metrics.jsonl",
+        "sha256": "19b2dabc64080ed9244a941267a961619a9c2d7e75d781524470bc0e373d422e"
+      },
+      {
+        "bytes": 297490,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedDyn_seed20.metrics.jsonl",
+        "sha256": "be4ffbf906e8d14426bb4e11cf6ec7356181c4f6b3fe144b970af24f3ebf297c"
+      },
+      {
+        "bytes": 297381,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedDyn_seed21.metrics.jsonl",
+        "sha256": "6e1fc1751c5d8e91e3fda3a45ac4d24818cf7fe3ca2b5a019eea3955d34b4cf4"
+      },
+      {
+        "bytes": 297412,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedDyn_seed22.metrics.jsonl",
+        "sha256": "9e62624a7f66980fe058c0fbb3f9cbc1fe834bce2854d1bf08106c21de705727"
+      },
+      {
+        "bytes": 296971,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedRaDR_seed20.metrics.jsonl",
+        "sha256": "2532ebf0658a295657e36995ec109cb8f4c4cf0e12461c08d911decf8c95cc95"
+      },
+      {
+        "bytes": 297123,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedRaDR_seed21.metrics.jsonl",
+        "sha256": "6c4ce3b355fa7f7c06133a0eb55bfd8d64ac1745b291f757a8f65c692ff2dcf2"
+      },
+      {
+        "bytes": 297171,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedRaDR_seed22.metrics.jsonl",
+        "sha256": "334e4f2a4ff64235e4beedff20e6e0dedad6e1e9ec4fa12656c785c73c92cd4c"
+      },
+      {
+        "bytes": 297352,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedSKC_seed20.metrics.jsonl",
+        "sha256": "f10bac32c6887263f872e21a50722e50fc1502bc12bcace65b27381380f1f8d9"
+      },
+      {
+        "bytes": 297377,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedSKC_seed21.metrics.jsonl",
+        "sha256": "1fecabf1d805cb695545695f93de390549fd6b91f109aa9522dadba00d65f0d4"
+      },
+      {
+        "bytes": 297250,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P2_FedSKC_seed22.metrics.jsonl",
+        "sha256": "157429711e4e44a4a23b8fbdb6e473fb632cd596a97d03062fbbf04d3c60fc36"
+      },
+      {
+        "bytes": 299116,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedAvg_seed20.metrics.jsonl",
+        "sha256": "e30b43afd0278250044a7cdb9426b2a49128bbfa836ac7412d17f89494383003"
+      },
+      {
+        "bytes": 299066,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedAvg_seed21.metrics.jsonl",
+        "sha256": "0abfae564abd6391c6385a907b048b295e0d51ebdab4b355921a9ea328cfa960"
+      },
+      {
+        "bytes": 299056,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedAvg_seed22.metrics.jsonl",
+        "sha256": "6bb40a2fea020be34ed921dbdc4cd9c5cf2054f7fced94724c28d3558a52989b"
+      },
+      {
+        "bytes": 299408,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedDyn_seed20.metrics.jsonl",
+        "sha256": "66a13880efb3ca30801383ee8f7c4228d1ba2a4501bd6b02775d29fb059629d9"
+      },
+      {
+        "bytes": 299436,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedDyn_seed21.metrics.jsonl",
+        "sha256": "5312bdfef2a234de1aebd50dbd882bda278d5bf8914c179c23fa471c7c050346"
+      },
+      {
+        "bytes": 299408,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedDyn_seed22.metrics.jsonl",
+        "sha256": "0cb6f48e9eb3265de576ef2fb2ed59be14f47cfeb43401a6fbd2df0a54a621d1"
+      },
+      {
+        "bytes": 299025,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedRaDR_seed20.metrics.jsonl",
+        "sha256": "9d155a9559f0438bfd2f46ec825dc76778aeccb069871a292726ce8fb1008058"
+      },
+      {
+        "bytes": 299185,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedRaDR_seed21.metrics.jsonl",
+        "sha256": "2b4c84ab2522c6ead1adbba447db08d991f7389a138052638eef7d7c3b4419d0"
+      },
+      {
+        "bytes": 299039,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedRaDR_seed22.metrics.jsonl",
+        "sha256": "38d363986c75a09698251b71654ea69c6be191cf7189f27d85e8abe2bc29ec0c"
+      },
+      {
+        "bytes": 299394,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedSKC_seed20.metrics.jsonl",
+        "sha256": "59b2c48fea7a7c2a4a609c102fac11e10b7f10fd7670619b9fa72a19ab65a671"
+      },
+      {
+        "bytes": 299377,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedSKC_seed21.metrics.jsonl",
+        "sha256": "d2d1d8a73033f5c73371b8fa7d895be228fc66eb6460a8c009491de1883cdc64"
+      },
+      {
+        "bytes": 299286,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo/log_cifar10_C100-P5_FedSKC_seed22.metrics.jsonl",
+        "sha256": "e7864a2d50f58d1cd8e83b6d40bc12388f5f111c935b3a6bbdffce3fa725f8a5"
+      },
+      {
+        "bytes": 432,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/smoke_hfr_check.csv",
+        "sha256": "9ac4893f415c2d23f7cbdfbe8b7223881560d67015359cc9a77fa48acaf415a5"
+      },
+      {
+        "bytes": 424,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/smoke_schema_check.csv",
+        "sha256": "b50378335971dd13a38863d7b859e47198936750912359740d2ccbd848c6323e"
+      },
+      {
+        "bytes": 121373,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedAvg_seed20.csv",
+        "sha256": "d5a90c48bce38f59d41b63a818df14edd7994f03103e25a3c26dc3a2aca61829"
+      },
+      {
+        "bytes": 121324,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedAvg_seed21.csv",
+        "sha256": "f2c66f00fb6bd3bfc8a04cc304e30e8ffa69e21bc331c7f2deee66f14f960232"
+      },
+      {
+        "bytes": 121363,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedAvg_seed22.csv",
+        "sha256": "1fd3bcbffb6de2ab01fd5cebc2c4e8b61371b47f55e7658bde2eaaaaa119b372"
+      },
+      {
+        "bytes": 121753,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedDyn_seed20.csv",
+        "sha256": "8a24981d95d0c2c8dcc55ec79fc525d117bc9ff0739b05dc15ccab0fd1b9ee81"
+      },
+      {
+        "bytes": 121785,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedDyn_seed21.csv",
+        "sha256": "812a9d63ca964b16c42975acd2f54e2231679d71ac9cd1bacb947ab464dbe9d5"
+      },
+      {
+        "bytes": 121730,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedDyn_seed22.csv",
+        "sha256": "2c1da52d798619fbec80bc3f0acc3fa8cb4f480ebc41658524bcc9731fd47d69"
+      },
+      {
+        "bytes": 121183,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedRaDR_seed20.csv",
+        "sha256": "78de9a097d0e33df59868d921a0f200955d97eb1c377642734c7fef68de67f5b"
+      },
+      {
+        "bytes": 121408,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedRaDR_seed21.csv",
+        "sha256": "4430a79e966fd497e0cf8efcd2f274074f3d56c2bff43736228fb4500c5de373"
+      },
+      {
+        "bytes": 121285,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedRaDR_seed22.csv",
+        "sha256": "74c0e6a89a4cf1af2cb60b8c8c39c8e632afe5cbb440f73c79e59aff808b8e5f"
+      },
+      {
+        "bytes": 121382,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedSKC_seed20.csv",
+        "sha256": "9b1687d228bf529284df38206eecbba8e9d70969701269acb8c22942daca4c66"
+      },
+      {
+        "bytes": 121619,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedSKC_seed21.csv",
+        "sha256": "10f6a254e7b71846a2217107a36bcb774e5d20445d1f8a5465421d721a8a27d1"
+      },
+      {
+        "bytes": 121666,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P10_FedSKC_seed22.csv",
+        "sha256": "332dcdf4417c79b37c32dda75c49493cb56b20c41db44cf8a549676399462481"
+      },
+      {
+        "bytes": 126120,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedAvg_seed20.csv",
+        "sha256": "8387f7d5f4d1af71048191ac440fe31f3570722455d1aaf9ec4625d0596041ac"
+      },
+      {
+        "bytes": 126141,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedAvg_seed21.csv",
+        "sha256": "cf48cbb6b4f442b8be38576a53928dcbce938dc3c0aa4fed1e027f81c5f53024"
+      },
+      {
+        "bytes": 126105,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedAvg_seed22.csv",
+        "sha256": "9649fae8afe18afc3d15aed5e76f0bf40732f62d226998c60c50ceb4d3d88496"
+      },
+      {
+        "bytes": 126625,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedDyn_seed20.csv",
+        "sha256": "66b9d508dcdd746faa6cf68039aea1f17574cf11a65270e4205a903ecdd468a9"
+      },
+      {
+        "bytes": 126516,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedDyn_seed21.csv",
+        "sha256": "da86836582a5ec5856cbe79384571e42557a5c4799961afdfb0c74fdcc7ad40c"
+      },
+      {
+        "bytes": 126547,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedDyn_seed22.csv",
+        "sha256": "2cf251c8d386e861f021c64ec336d6622ed99842c82ad104c1483510b50613b3"
+      },
+      {
+        "bytes": 126106,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedRaDR_seed20.csv",
+        "sha256": "874c2ea831d821757e8547a4021301b31ef3552717e3c6d720d5228ba05f61ab"
+      },
+      {
+        "bytes": 126258,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedRaDR_seed21.csv",
+        "sha256": "a526f628e244d500922c90c2bbf8559f2c27f3c631a1a0ba7ceac27f324ec818"
+      },
+      {
+        "bytes": 126306,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedRaDR_seed22.csv",
+        "sha256": "811c80eef947fd9205ea2fdbac1c0290df7c45945b4f1035cc60be098d6da230"
+      },
+      {
+        "bytes": 126487,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedSKC_seed20.csv",
+        "sha256": "55f1119dddcc38c9af4f436e4a4818a107db5d5dfedbc750f1e1473a938e7aff"
+      },
+      {
+        "bytes": 126512,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedSKC_seed21.csv",
+        "sha256": "96fa7526d42161d92720f236aa8f82823bf8f5f51206dc21b4a7abbaee1e5c18"
+      },
+      {
+        "bytes": 126385,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P2_FedSKC_seed22.csv",
+        "sha256": "465c56d590e9bd1a8a6207d4eceb56e4944727d422462e1abfdd6ab33cfe48c8"
+      },
+      {
+        "bytes": 128251,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedAvg_seed20.csv",
+        "sha256": "c4da4458d96ceee17b3b1e4676e6325226a987b05087e3a5a982b04ad6cbc416"
+      },
+      {
+        "bytes": 128201,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedAvg_seed21.csv",
+        "sha256": "dfff49d17c9753472bf2b599302c94b7a606f81ec537714b1aa56adf353c02ab"
+      },
+      {
+        "bytes": 128191,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedAvg_seed22.csv",
+        "sha256": "a49b34de81d5ddb36cc180140861e393a070d88d7ab889e704550f22f584b537"
+      },
+      {
+        "bytes": 128543,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedDyn_seed20.csv",
+        "sha256": "86a8520ea965f6ee063d5b6c83610fbaedd5313a31fde7544b9df082a9614c60"
+      },
+      {
+        "bytes": 128571,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedDyn_seed21.csv",
+        "sha256": "22bfcef7abae196aad81d66bb196af2f2e8a92a4ab1e7342fdb56fdb89d6ee2a"
+      },
+      {
+        "bytes": 128543,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedDyn_seed22.csv",
+        "sha256": "69191b71d4033b750cbfb248ec6941c226bd29388914a289dca7868594782285"
+      },
+      {
+        "bytes": 128160,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedRaDR_seed20.csv",
+        "sha256": "940da246a2a1236f483905823cb2f8de227ad9188a24bfcb4fb104d73b659973"
+      },
+      {
+        "bytes": 128320,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedRaDR_seed21.csv",
+        "sha256": "96fc0f5297603cc7492693f560306ac00a20f199bb1e1b7927f554e88395953f"
+      },
+      {
+        "bytes": 128174,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedRaDR_seed22.csv",
+        "sha256": "399556a9cfddbd5cdcc3bdfda63bc35cb99816748d4e24b50f25193c158eac38"
+      },
+      {
+        "bytes": 128529,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedSKC_seed20.csv",
+        "sha256": "fa954391d9672715bc75ab1fdeeb6b314e5664d72153e4123ceace7e6e446ee3"
+      },
+      {
+        "bytes": 128512,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedSKC_seed21.csv",
+        "sha256": "32b2587713133e201502d0d4cfcfacc8e578f58115b0f89f2e1757e72d232108"
+      },
+      {
+        "bytes": 128421,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/raw_logs/demo_cifar10_C100-P5_FedSKC_seed22.csv",
+        "sha256": "fe1992cc0b6be6359bdb5f4f28b385b6e4fb432ca0bdc355bfe14cd940f54eae"
+      }
+    ],
+    "schedules": [
+      {
+        "bytes": 111102,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p10-r1000-seed20.json",
+        "sha256": "49b9df55c87f1225b768357eed26cd5d7b9f612bf596f8955dff70c4307d1dc9"
+      },
+      {
+        "bytes": 111116,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p10-r1000-seed21.json",
+        "sha256": "c3e0441487c308725fe2c1c2bd7948e3ed2cfd09a3fc29d982f19cf883172384"
+      },
+      {
+        "bytes": 111149,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p10-r1000-seed22.json",
+        "sha256": "38301b12745ba2be54c788bce89ce65483dd6c482b6334e215bd1b01b1eaf425"
+      },
+      {
+        "bytes": 55615,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p10-r500-seed20.json",
+        "sha256": "db7efd08b72a1728de878801d940012c26506de237e9f46424927677f9d66045"
+      },
+      {
+        "bytes": 55627,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p10-r500-seed21.json",
+        "sha256": "89e4bab2363b0c6b43c7d0bb727d5e2ea8fe8d90421686092be3e5a2a3e2db12"
+      },
+      {
+        "bytes": 55654,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p10-r500-seed22.json",
+        "sha256": "12af5136f0cd8099f9d3349917e0c4794def2988445cf17a8d2a7ae8f1796942"
+      },
+      {
+        "bytes": 31960,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p2-r1000-seed20.json",
+        "sha256": "a1a909d6e34b73f914f8329f5632874a151ef14bcc187491d29507eb90a8908c"
+      },
+      {
+        "bytes": 31944,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p2-r1000-seed21.json",
+        "sha256": "c5ed41dffad3c1c0467c5087d492eedf0962316a472794c1fd94e39f9b970376"
+      },
+      {
+        "bytes": 31962,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p2-r1000-seed22.json",
+        "sha256": "a1df96b0394685f4b3a0849c7301b42dae65dad5469bdf0ddb7cf3caf7450e09"
+      },
+      {
+        "bytes": 61623,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p5-r1000-seed20.json",
+        "sha256": "c82d59d03ffb85ef2a4d0b764560f237200d7d109bbd18cc490f1a76c58b8c23"
+      },
+      {
+        "bytes": 61624,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p5-r1000-seed21.json",
+        "sha256": "6419b99f846c5cbb98e4cf55bb16adf8d8b0c4a56fc2d3caaf964c866becc18f"
+      },
+      {
+        "bytes": 61655,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c100-p5-r1000-seed22.json",
+        "sha256": "5b5fac29d9fe00d5f1f51d3f15c2cdd38f5be340e8ada96552c5a0c6368791f5"
+      },
+      {
+        "bytes": 119944,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c500-p2-r1000-seed20.json",
+        "sha256": "c5c9a3abb6dc4d03fba83b2465eed236fae239ac93eebe49536cefaa670dee09"
+      },
+      {
+        "bytes": 119885,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c500-p2-r1000-seed21.json",
+        "sha256": "ea1ecb83d914a007603e8a7fdc5bdac67eefad40787840a09940c4bee27227ee"
+      },
+      {
+        "bytes": 119899,
+        "path": "C:/Users/admin/Documents/\u8bba\u6587\u6295\u7a3f/FedRaDR/reproducibility/schedules/c500-p2-r1000-seed22.json",
+        "sha256": "aff933995e02d518c7a7bf3501ae25a7316f879a20bf2e39907c8c4cac7ec445"
+      }
+    ]
+  },
+  "counts": {
+    "partitions": 51,
+    "power_sample_files": 0,
+    "raw_log_files": 115,
+    "schedules": 15
+  },
+  "expected": {
+    "partitions": 51,
+    "power_traces": 12,
+    "raw_per_round_logs": "expanded from protocol; no generated target",
+    "schedules": 15
+  },
+  "generated_at_utc": "2026-09-27T09:13:01.825199+00:00",
+  "notes": [
+    "Generated schedules are deterministic rerun assets, not recovered historical schedules.",
+    "A valid aggregate table is not a substitute for metrics.jsonl/stdout.",
+    "Energy values require raw timestamped traces and an explicit power scope."
+  ],
+  "provenance": {
+    "created_at_utc": "2026-09-27T09:13:01.825199+00:00",
+    "git": {
+      "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+      "commit_short": "6a24166",
+      "dirty": true,
+      "remotes": {
+        "origin": {
+          "fetch": "https://github.com/wangc1343/FedRaDR.git",
+          "push": "https://github.com/wangc1343/FedRaDR.git"
+        }
+      },
+      "tags_at_commit": []
+    },
+    "historical": false,
+    "origin": "generated",
+    "script_version": "1.0"
+  },
+  "schema_version": "fedradr.artifact-manifest.v1",
+  "status": {
+    "baseline_search_grids": false,
+    "code_version": false,
+    "partitions": true,
+    "power_traces": false,
+    "raw_logs": true,
+    "schedules": true
+  }
+}

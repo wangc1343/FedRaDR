@@ -1,0 +1,13 @@
+{
+  "schema_version": "fedradr.generated-demo.v1",
+  "provenance": {
+    "origin": "demo",
+    "historical": false,
+    "warning": "Generated trend data for pipeline demonstrations only."
+  },
+  "counts": {
+    "partitions": 51,
+    "logs": 36,
+    "energy_traces": 12
+  }
+}

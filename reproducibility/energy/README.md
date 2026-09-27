@@ -20,6 +20,7 @@ Example:
 ```bash
 python scripts/measure_nvidia_energy.py \
   --gpu-index 0 --interval-ms 100 \
+  --warmup-excluded 1 \
   --output-prefix reproducibility/energy/rtx4090-fedradr-seed20 \
   -- python scripts/run_fedradr.py <arguments>
 ```
@@ -36,10 +37,26 @@ quantities and must be labeled explicitly. The currently reported single
 Jetson observation is qualitative; it cannot be presented with an error bar
 until repeated measurements are available.
 
+The repository provides a wrapper that retains the named rail and raw
+`tegrastats` line for every sample:
+
+```bash
+python scripts/measure_jetson_energy.py \
+  --rail VDD_IN --interval-ms 100 \
+  --device "Jetson AGX Orin" --mode MAXN --warmup-excluded 1 \
+  --output-prefix reproducibility/power_traces/jetson-fedradr-seed20 \
+  -- python scripts/run_fedradr.py <arguments>
+```
+
+The Jetson wrapper also retains a `.tegrastats.log` file and records UTC
+start/end times, elapsed seconds, the selected rail, device mode, warm-up
+count, and a measurement status. Use `--metadata-json` to attach the fixed
+workload description (dataset, model, batch size, shard size, data order, and
+software version) to the summary sidecar.
+
 ## Missing historical evidence
 
 No raw RTX 4090 or Jetson power traces underlying the manuscript values were
-found in the local repository during the 2026-09-25 audit. Recover those traces
+found in the local repository during the 2026-09-26 audit. Recover those traces
 from the measurement host or rerun the protocol before claiming that raw energy
 records have been released.
-

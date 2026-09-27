@@ -307,7 +307,7 @@ def generate_syn_logistic(dimension, n_clnt, n_cls, avg_data=4, alpha=1.0, beta=
     data_y = np.asarray(data_y)
     return data_x, data_y
         
-class DatasetSynthetic:
+class DatasetGenerated:
     def __init__(self, alpha, beta, iid_sol, iid_data, n_dim, n_clnt, n_cls, avg_data, data_path, name_prefix):
         self.dataset = 'synt'
         self.name  = name_prefix + '_'

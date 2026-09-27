@@ -1,11 +1,12 @@
 {
-  "audit_date": "2026-09-25",
+  "audit_date": "2026-09-26",
   "code": {
     "status": "available",
-    "local_commit_at_audit": "7fd5ed8",
+    "repository": "https://github.com/wangc1343/FedRaDR",
+    "working_tree_base_commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+    "release_tag": null,
     "upstream": "https://github.com/gaoliang13/FedDC",
-    "public_fedradr_url": null,
-    "note": "Create an author-owned repository and replace the null URL before submission."
+    "note": "Create a release commit and tag after the final artifact files have been added."
   },
   "client_schedules": {
     "status": "available_for_deterministic_reruns",
@@ -13,8 +14,10 @@
     "note": "Verify that these deterministic files match any schedules retained from the historical primary campaign."
   },
   "partition_files": {
-    "status": "inventory_and_schema_available_binary_files_missing",
-    "path": "reproducibility/partitions/manifest.json"
+    "status": "generator_inventory_validator_and_schema_available_binary_files_missing",
+    "path": "reproducibility/partitions",
+    "generator": "scripts/generate_partition.py",
+    "validator": "scripts/validate_partitions.py"
   },
   "baseline_hyperparameters": {
     "status": "author_provided_final_values_available",
@@ -25,7 +28,7 @@
     "path": "reproducibility/configs/tuning_protocol.json"
   },
   "reported_appendix_c_records": {
-    "status": "available_as_reported_aggregates",
+    "status": "appendix_b_raw_rtt_and_appendix_c_aggregate_records_available",
     "path": "reproducibility/reported_results"
   },
   "full_per_round_logs": {
@@ -34,7 +37,17 @@
     "note": "Only a smoke-test metrics.jsonl was found; the naming convention and required columns are documented."
   },
   "energy_measurement": {
-    "status": "measurement_tool_available_raw_paper_traces_missing",
-    "path": "reproducibility/energy/README.md"
+    "status": "rtx4090_and_jetson_measurement_tools_available_raw_paper_traces_missing",
+    "path": "reproducibility/energy/README.md",
+    "rtx4090_tool": "scripts/measure_nvidia_energy.py",
+    "jetson_tool": "scripts/measure_jetson_energy.py"
+  },
+  "supplementary_export": {
+    "status": "validator_and_packager_available_source_evidence_incomplete",
+    "export_tool": "gen_supplementary_export.py",
+    "hardware_summary_tool": "calc_hardware_summary.py",
+    "instructions": "README_Supplementary.md",
+    "latest_audit": "reproducibility/supplementary_export_audit.json",
+    "policy": "Only genuine validated artifacts are packaged; generated replacements are rejected."
   }
 }

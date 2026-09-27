@@ -32,7 +32,3 @@ round,test_accuracy,train_objective,mfg,hfr_tau,downlink_bytes,uplink_bytes,cumu
 Every CSV must have a sidecar `config.json` recording the code commit,
 partition SHA-256, schedule SHA-256, model, optimizer, all hyperparameters,
 device, precision, software versions, and target-accuracy definition.
-
-The repository currently contains only aggregate Appendix records and smoke
-logs. The historical full per-round files still need to be recovered or rerun.
-

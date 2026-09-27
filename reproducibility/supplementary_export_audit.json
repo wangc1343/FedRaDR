@@ -1,0 +1,114 @@
+{
+  "complete": false,
+  "checks": {
+    "partitions": {
+      "required": 51,
+      "valid": 0,
+      "complete": false,
+      "errors": [
+        "missing cifar10_N100_D1_seed20.pkl",
+        "missing cifar10_N100_D1_seed21.pkl",
+        "missing cifar10_N100_D1_seed22.pkl",
+        "missing cifar10_N100_D2_seed20.pkl",
+        "missing cifar10_N100_D2_seed21.pkl",
+        "missing cifar10_N100_D2_seed22.pkl",
+        "missing cifar10_N100_P1_seed20.pkl",
+        "missing cifar10_N100_P1_seed21.pkl",
+        "missing cifar10_N100_P1_seed22.pkl",
+        "missing cifar10_N100_P2_seed20.pkl",
+        "missing cifar10_N100_P2_seed21.pkl",
+        "missing cifar10_N100_P2_seed22.pkl",
+        "missing cifar10_N500_D1_seed20.pkl",
+        "missing cifar10_N500_D1_seed21.pkl",
+        "missing cifar10_N500_D1_seed22.pkl",
+        "missing cifar10_N500_D2_seed20.pkl",
+        "missing cifar10_N500_D2_seed21.pkl",
+        "missing cifar10_N500_D2_seed22.pkl",
+        "missing cifar10_N500_P1_seed20.pkl",
+        "missing cifar10_N500_P1_seed21.pkl",
+        "missing cifar10_N500_P1_seed22.pkl",
+        "missing cifar10_N500_P2_seed20.pkl",
+        "missing cifar10_N500_P2_seed21.pkl",
+        "missing cifar10_N500_P2_seed22.pkl",
+        "missing cifar100_N100_D1_seed20.pkl",
+        "missing cifar100_N100_D1_seed21.pkl",
+        "missing cifar100_N100_D1_seed22.pkl",
+        "missing cifar100_N100_D2_seed20.pkl",
+        "missing cifar100_N100_D2_seed21.pkl",
+        "missing cifar100_N100_D2_seed22.pkl",
+        "missing cifar100_N100_P1_seed20.pkl",
+        "missing cifar100_N100_P1_seed21.pkl",
+        "missing cifar100_N100_P1_seed22.pkl",
+        "missing cifar100_N100_P2_seed20.pkl",
+        "missing cifar100_N100_P2_seed21.pkl",
+        "missing cifar100_N100_P2_seed22.pkl",
+        "missing cifar100_N500_D1_seed20.pkl",
+        "missing cifar100_N500_D1_seed21.pkl",
+        "missing cifar100_N500_D1_seed22.pkl",
+        "missing cifar100_N500_D2_seed20.pkl",
+        "missing cifar100_N500_D2_seed21.pkl",
+        "missing cifar100_N500_D2_seed22.pkl",
+        "missing cifar100_N500_P1_seed20.pkl",
+        "missing cifar100_N500_P1_seed21.pkl",
+        "missing cifar100_N500_P1_seed22.pkl",
+        "missing cifar100_N500_P2_seed20.pkl",
+        "missing cifar100_N500_P2_seed21.pkl",
+        "missing cifar100_N500_P2_seed22.pkl",
+        "missing tinyimagenet_N100_D1_seed20.pkl",
+        "missing tinyimagenet_N100_D1_seed21.pkl",
+        "missing tinyimagenet_N100_D1_seed22.pkl"
+      ]
+    },
+    "run_logs": {
+      "required": 240,
+      "valid": 0,
+      "complete": false,
+      "errors": [
+        "found 0 valid files; require at least 240"
+      ]
+    },
+    "power_traces": {
+      "required": 12,
+      "valid": 0,
+      "complete": false,
+      "errors": [
+        "found 0 valid files; require at least 12"
+      ]
+    },
+    "schedules": {
+      "required": 15,
+      "valid": 15,
+      "complete": true,
+      "errors": []
+    },
+    "configs": {
+      "required": 4,
+      "valid": 4,
+      "complete": true,
+      "errors": []
+    },
+    "reported_results": {
+      "required": 5,
+      "valid": 5,
+      "complete": true,
+      "errors": []
+    },
+    "baseline_tuning_record": {
+      "required": 1,
+      "valid": 0,
+      "complete": false,
+      "errors": [
+        "baseline exact search spaces and selected values are missing"
+      ]
+    },
+    "tagged_code_version": {
+      "required": 1,
+      "valid": 0,
+      "complete": false,
+      "errors": [
+        "release tag is missing",
+        "captured working tree is not clean"
+      ]
+    }
+  }
+}

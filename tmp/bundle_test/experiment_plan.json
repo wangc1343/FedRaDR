@@ -1,0 +1,204 @@
+{
+  "artifact_policy": {
+    "aggregates_are_raw_logs": false,
+    "generated_schedules_are_historical": false,
+    "generated_power_traces_allowed": false,
+    "generated_training_logs_allowed": false
+  },
+  "datasets": {
+    "cifar10": {
+      "model": "ResNet-18-GN",
+      "rounds": 1000
+    },
+    "cifar100": {
+      "model": "ResNet-18-GN",
+      "rounds": 1000
+    },
+    "mobile_transfer": {
+      "datasets": [
+        "cifar100-D1",
+        "tinyimagenet-D1"
+      ],
+      "model": "MobileNetV2-GN"
+    },
+    "tinyimagenet": {
+      "model": "ResNet-18-GN",
+      "rounds": 500
+    }
+  },
+  "fedradr_hyperparameters": {
+    "dynamic_regularization_alpha": 0.1,
+    "epsilon": 1e-08,
+    "lambda_max": 0.5,
+    "normalization": "exact client mean",
+    "temperature": 4.0
+  },
+  "methods": [
+    "FedAvg",
+    "SCAFFOLD",
+    "FedDyn",
+    "FedVRA",
+    "FedDisco",
+    "FedSpeedOE",
+    "FedKT",
+    "FedSKC",
+    "FedRaDR",
+    "FedRaDR-SAMOE"
+  ],
+  "partition_specs": {
+    "cifar10": {
+      "clients": [
+        100,
+        500
+      ],
+      "partitions": {
+        "D1": {
+          "alpha": 0.3
+        },
+        "D2": {
+          "alpha": 0.6
+        },
+        "P1": {
+          "n_class_per_client": 3
+        },
+        "P2": {
+          "n_class_per_client": 5
+        }
+      }
+    },
+    "cifar100": {
+      "clients": [
+        100,
+        500
+      ],
+      "partitions": {
+        "D1": {
+          "alpha": 0.3
+        },
+        "D2": {
+          "alpha": 0.6
+        },
+        "P1": {
+          "n_class_per_client": 10
+        },
+        "P2": {
+          "n_class_per_client": 20
+        }
+      }
+    },
+    "tinyimagenet": {
+      "clients": [
+        100
+      ],
+      "partitions": {
+        "D1": {
+          "alpha": 0.1
+        }
+      }
+    }
+  },
+  "reporting": {
+    "additional_diagnostics": [
+      "forward_flops",
+      "backward_flops",
+      "peak_memory_bytes",
+      "gradient_variance",
+      "client_drift_norm",
+      "update_cosine_similarity",
+      "missing_class_probability_mass_retention",
+      "missing_class_accuracy_delta"
+    ],
+    "censored_target_notation": ">budget",
+    "diagnostic_subset": "fixed client-local V_i, never used for model updates",
+    "hfr_threshold": "pre-registered FedAvg 90th percentile at the matched early round",
+    "raw_log_fields": [
+      "round",
+      "test_accuracy",
+      "train_objective",
+      "mfg",
+      "hfr_tau",
+      "downlink_bytes",
+      "uplink_bytes",
+      "cumulative_serialized_bytes",
+      "single_device_elapsed_seconds"
+    ],
+    "seeds": [
+      20,
+      21,
+      22
+    ],
+    "time_definition": "single-device aggregate compute time"
+  },
+  "schema_version": "fedradr.reproduction.v1",
+  "seeds": [
+    20,
+    21,
+    22
+  ],
+  "settings": [
+    {
+      "clients": 100,
+      "clients_per_round": 10,
+      "id": "C100-P10",
+      "rounds": 1000
+    },
+    {
+      "clients": 500,
+      "clients_per_round": 10,
+      "id": "C500-P2",
+      "rounds": 1000
+    },
+    {
+      "clients": 100,
+      "clients_per_round": 5,
+      "id": "C100-P5",
+      "purpose": "controlled participation",
+      "rounds": 1000
+    },
+    {
+      "clients": 100,
+      "clients_per_round": 2,
+      "id": "C100-P2",
+      "purpose": "controlled participation",
+      "rounds": 1000
+    },
+    {
+      "clients": 100,
+      "clients_per_round": 10,
+      "id": "Tiny-C100-P10",
+      "rounds": 500
+    }
+  ],
+  "shared_hyperparameters": {
+    "aggregation": "data-size weighted",
+    "batch_size": 50,
+    "learning_rate": 0.1,
+    "learning_rate_decay_per_round": 0.998,
+    "local_steps": 5,
+    "optimizer": "SGD",
+    "weight_decay": 0.001
+  },
+  "source_document": {
+    "path": "C:\\Users\\admin\\Desktop\\revision_neurocomputing\\revision_neurocomputing\\cas-dc-sample.pdf",
+    "sha256": "6e28f609c75cf59f454b8dec9596219a2c76b81da171ad7294f1f26c09b88afe"
+  },
+  "tuning_protocol": {
+    "baseline_search_spaces": "required historical input; do not infer",
+    "freeze_after_selection": true,
+    "lambda_max_candidates": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      1.0
+    ],
+    "selection_setting": "CIFAR10-D1/C100-P10",
+    "temperature_candidates": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}

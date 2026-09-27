@@ -1,0 +1,137 @@
+{
+  "fedradr": {
+    "epsilon": 1e-08,
+    "search_space": {
+      "lambda_max": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        1.0
+      ],
+      "temperature": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "selected": {
+      "lambda_max": 0.5,
+      "temperature": 4.0
+    }
+  },
+  "methods": {
+    "FedAvg": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {}
+    },
+    "FedDisco": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {
+        "lambda_disco": 0.22
+      }
+    },
+    "FedDyn": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {
+        "alpha": 0.1
+      }
+    },
+    "FedKT": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {
+        "kd_lambda": 0.75,
+        "kd_temperature": 4.0
+      }
+    },
+    "FedRaDR": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {
+        "dynamic_regularization_alpha": 0.1,
+        "epsilon": 1e-08,
+        "lambda_max": 0.5,
+        "normalization": "exact client mean",
+        "temperature": 4.0
+      }
+    },
+    "FedRaDR-SAMOE": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SAM",
+      "search_space": null,
+      "selected": {
+        "dynamic_regularization_alpha": 0.1,
+        "epsilon": 1e-08,
+        "lambda_max": 0.5,
+        "rho": 0.05,
+        "sam_alpha": 0.1,
+        "temperature": 4.0
+      }
+    },
+    "FedSKC": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {
+        "kd_temperature": 4.0,
+        "struct_coeff": 0.65
+      }
+    },
+    "FedSpeedOE": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SAM",
+      "search_space": null,
+      "selected": {
+        "rho": 0.05,
+        "sam_alpha": 0.1
+      }
+    },
+    "FedVRA": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {
+        "control_weight": 0.5
+      }
+    },
+    "SCAFFOLD": {
+      "evidence": "historical search grid required before claiming exact baseline tuning",
+      "optimizer": "SGD",
+      "search_space": null,
+      "selected": {}
+    }
+  },
+  "provenance": {
+    "created_at_utc": "2026-09-27T08:43:41.177801+00:00",
+    "git": {
+      "commit": "6a24166e86c49f3abf9449fac12e4342fa91de6f",
+      "commit_short": "6a24166",
+      "dirty": true,
+      "remotes": {
+        "origin": {
+          "fetch": "https://github.com/wangc1343/FedRaDR.git",
+          "push": "https://github.com/wangc1343/FedRaDR.git"
+        }
+      },
+      "tags_at_commit": []
+    },
+    "historical": false,
+    "origin": "generated",
+    "script_version": "1.0"
+  },
+  "schema_version": "fedradr.tuning.v1",
+  "selection_rule": "Search under the shared protocol, select once, then freeze for test settings.",
+  "selection_setting": "CIFAR10-D1/C100-P10",
+  "status": "incomplete_until_original_baseline_grids_are_supplied"
+}

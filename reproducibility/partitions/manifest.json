@@ -4,6 +4,8 @@
   "seeds": [20, 21, 22],
   "expected_file_count": 51,
   "files_present_in_local_repository": false,
+  "generated_rerun_algorithm": "fedradr_partition_v1_classwise",
+  "generated_outputs_are_historical": false,
   "reuse_rule": "For a fixed dataset, client count, partition and seed, reuse the identical file across every compared method. Seed-specific files are distinct partition realizations.",
   "groups": [
     {"dataset": "cifar10", "num_clients": [100, 500], "partitions": {"D1": {"alpha": 0.3}, "D2": {"alpha": 0.6}, "P1": {"n_class_per_client": 3}, "P2": {"n_class_per_client": 5}}},
@@ -18,7 +20,10 @@
     "partition_type": "str",
     "hyper": "dict containing alpha or n_class_per_client",
     "seed": "int",
-    "index_basis": "required release metadata: raw dataset order or the exact seeded permutation applied before indexing"
+    "index_basis": "required release metadata: raw dataset order or the exact seeded permutation applied before indexing",
+    "sample_count": "int; generated files must cover range(0, sample_count) exactly",
+    "labels_sha256": "sha256 of the exact one-dimensional label array used as index basis",
+    "algorithm_version": "partition implementation identifier"
   },
   "displayed_record_hash_prefixes_from_manuscript": {
     "cifar10_D1": "a19cfe9ffd3f",
